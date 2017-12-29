@@ -15,3 +15,88 @@
         flex-direction: $direction;
     }
 }
+
+@mixin bg-gradient {
+    background-image: -ms-radial-gradient(right center, ellipse farthest-side, #05AFCC 0%, #207DCC 100%);
+    background-image: -moz-radial-gradient(right center, ellipse farthest-side, #05AFCC 0%, #207DCC 100%);
+    background-image: -o-radial-gradient(right center, ellipse farthest-side, #05AFCC 0%, #207DCC 100%);
+    background-image: -webkit-gradient(radial, right center, 0, right center, 515, color-stop(0, #05AFCC), color-stop(100, #207DCC));
+    background-image: -webkit-radial-gradient(right center, ellipse farthest-side, #05AFCC 0%, #207DCC 100%);
+    background-image: radial-gradient(ellipse farthest-side at right center, #05AFCC 0%, #207DCC 100%);
+}
+
+@mixin top-bottom-gradient {
+    background-image: -ms-linear-gradient(top, #05AFCC 0%, #207DCC 100%);
+    background-image: -moz-linear-gradient(top, #05AFCC 0%, #207DCC 100%);
+    background-image: -o-linear-gradient(top, #05AFCC 0%, #207DCC 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #05AFCC), color-stop(100, #207DCC));
+    background-image: -webkit-linear-gradient(top, #05AFCC 0%, #207DCC 100%);
+    background-image: linear-gradient(to bottom, #05AFCC 0%, #207DCC 100%);
+}
+
+@mixin left-right-gradient {
+    background-image: -ms-linear-gradient(left, #6DE5EC 0%, #00aeee 100%);
+    background-image: -moz-linear-gradient(left, #6DE5EC 0%, #00aeee 100%);
+    background-image: -o-linear-gradient(left, #6DE5EC 0%, #00aeee 100%);
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #6DE5EC), color-stop(100, #00aeee));
+    background-image: -webkit-linear-gradient(left, #6DE5EC 0%, #00aeee 100%);
+    background-image: linear-gradient(to right, #6DE5EC 0%, #00aeee 100%);
+}
+
+.heading {
+    font-family: $rockwell-regular;
+    font-size: 34px;
+}
+
+.more-link {
+    a {
+        padding: 7px 20px;
+        @include left-right-gradient;
+        text-transform: uppercase;
+        color: $white;
+        font-size: 11px;
+        cursor: pointer;
+        font-family: $raleway-bold;
+        transition: 0.5s all ease;
+        &:hover {
+            box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.3);
+        }
+    }
+}
+
+.hvr-sweep-to-right {
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: 0 50%;
+        transform-origin: 0 50%;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+    &:hover, &:focus, &:active {
+        &:before {
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+        }
+    }
+}

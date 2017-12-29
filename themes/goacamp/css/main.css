@@ -10,6 +10,51 @@ a {
   text-decoration: none;
   color: #207DCC; }
 
+.heading, .region-content .block-region-content .block-block-content:first-child h2, [class*="blocknews-and-updates"] h2 {
+  font-family: "Rockwell-regular";
+  font-size: 34px; }
+
+.more-link a {
+  padding: 7px 20px;
+  background-image: linear-gradient(to right, #6DE5EC 0%, #00aeee 100%);
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-size: 11px;
+  cursor: pointer;
+  font-family: "Raleway-Bold";
+  transition: 0.5s all ease; }
+
+.more-link a:hover {
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3); }
+
+.hvr-sweep-to-right, .region-content .block-region-content .block-block-content:first-child .field--name-body a {
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  transition-property: color;
+  transition-duration: 0.3s; }
+
+.hvr-sweep-to-right:before, .region-content .block-region-content .block-block-content:first-child .field--name-body a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+  -ms-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out; }
+
+.hvr-sweep-to-right:hover:before, .region-content .block-region-content .block-block-content:first-child .field--name-body a:hover:before, .hvr-sweep-to-right:focus:before, .region-content .block-region-content .block-block-content:first-child .field--name-body a:focus:before, .hvr-sweep-to-right:active:before, .region-content .block-region-content .block-block-content:first-child .field--name-body a:active:before {
+  -ms-transform: scaleX(1);
+  transform: scaleX(1); }
+
 @font-face {
   font-family: 'Raleway-Bold';
   src: url("../fonts/Raleway-Bold.ttf") format("truetype");
@@ -131,6 +176,9 @@ a {
   display: block;
   background-size: cover; }
 
+.top-container .column-3 a:hover, .top-container .column-3 a:focus, .top-container .column-3 a:active {
+  opacity: 0.7; }
+
 .top-container .column-3 a:first-child {
   position: relative; }
 
@@ -156,14 +204,11 @@ a {
   position: relative;
   padding: 8em 0 8em 5em;
   color: #FFFFFF;
-  background: url("../images/about_bg.png") scroll 0 0 transparent;
-  box-sizing: border-box;
-  background-size: cover; }
+  background-image: radial-gradient(ellipse farthest-side at right center, #05AFCC 0%, #207DCC 100%);
+  box-sizing: border-box; }
 
 .region-content .block-region-content .block-block-content:first-child h2 {
   margin-top: 0;
-  font-family: "Rockwell-regular";
-  font-size: 34px;
   margin-bottom: 0; }
 
 .region-content .block-region-content .block-block-content:first-child .field--name-body strong {
@@ -186,13 +231,30 @@ a {
   display: inline-block;
   padding: 0.6em 18px;
   border-radius: 5px;
-  font-size: 11px; }
+  font-size: 11px;
+  cursor: pointer;
+  display: inline-block; }
+
+.region-content .block-region-content .block-block-content:first-child .field--name-body a:before {
+  background: #FFFFFF; }
+
+.region-content .block-region-content .block-block-content:first-child .field--name-body a:hover, .region-content .block-region-content .block-block-content:first-child .field--name-body a:focus, .region-content .block-region-content .block-block-content:first-child .field--name-body a:active {
+  color: #207DCC; }
 
 .region-content .block-region-content .block-block-content:first-child .field--name-body img {
   max-width: 340px;
   position: absolute;
   top: -70px;
   right: 0; }
+
+[class*="blocknews-and-updates"] {
+  padding: 8em 0 8em 5em;
+  color: #FFFFFF;
+  background: #FFFFFF;
+  box-sizing: border-box; }
+
+[class*="blocknews-and-updates"] h2 {
+  color: #63c6e5; }
 
 ul.menu {
   list-style: none;
