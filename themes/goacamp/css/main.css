@@ -59,7 +59,100 @@ a {
   font-weight: normal;
   font-style: normal; }
 
-[id*="aboutthecamp"] {
+.top-container {
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 2em;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative; }
+
+.top-container .column-1 {
+  -ms-flex-preferred-size: 24%;
+  flex-basis: 24%;
+  margin-left: -6%;
+  margin-top: -10%;
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  color: #207DCC;
+  font-family: "Raleway-Thin"; }
+
+.top-container .column-1 span:last-child {
+  position: relative; }
+
+.top-container .column-1 span:last-child:after {
+  content: "";
+  position: absolute;
+  left: -60%;
+  top: 40%;
+  width: 55%;
+  height: 1px;
+  background-color: #207DCC; }
+
+.top-container .column-2 {
+  -ms-flex-preferred-size: 80%;
+  flex-basis: 80%;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.top-container .column-2 img {
+  max-width: 475px; }
+
+.top-container .column-2 a {
+  margin-top: 0.7em;
+  background: url("../images/register_now.svg") no-repeat scroll 0 0 transparent;
+  color: transparent;
+  font-size: 2.5em;
+  width: 140px; }
+
+.top-container .column-3 {
+  -ms-flex-preferred-size: 20%;
+  flex-basis: 20%;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: -16%; }
+
+.top-container .column-3 a {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  text-indent: -9999px;
+  margin-bottom: 15px;
+  display: block;
+  background-size: cover; }
+
+.top-container .column-3 a:first-child {
+  position: relative; }
+
+.top-container .column-3 a:first-child:after {
+  content: "";
+  position: absolute;
+  top: -222px;
+  width: 1px;
+  height: 203px;
+  left: 50%;
+  background-color: #207DCC; }
+
+.top-container .facebook {
+  background: url("../images/facebook.svg") no-repeat scroll 0 0 transparent; }
+
+.top-container .twitter {
+  background: url("../images/linkedin.svg") no-repeat scroll 0 0 transparent; }
+
+.top-container .linkedin {
+  background: url("../images/twitter.svg") no-repeat scroll 0 0 transparent; }
+
+.region-content .block-region-content .block-block-content:first-child {
   position: relative;
   padding: 8em 0 8em 5em;
   color: #FFFFFF;
@@ -67,23 +160,23 @@ a {
   box-sizing: border-box;
   background-size: cover; }
 
-[id*="aboutthecamp"] h2 {
+.region-content .block-region-content .block-block-content:first-child h2 {
   margin-top: 0;
   font-family: "Rockwell-regular";
   font-size: 34px;
   margin-bottom: 0; }
 
-[id*="aboutthecamp"] strong {
+.region-content .block-region-content .block-block-content:first-child .field--name-body strong {
   font-family: "Raleway-Regular";
   font-size: 13px; }
 
-[id*="aboutthecamp"] p {
+.region-content .block-region-content .block-block-content:first-child .field--name-body p {
   max-width: 550px;
   font-size: 13px;
   font-family: "Raleway-Thin";
   line-height: 1.4; }
 
-[id*="aboutthecamp"] a {
+.region-content .block-region-content .block-block-content:first-child .field--name-body a {
   border: 1px solid #FFFFFF;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -95,7 +188,7 @@ a {
   border-radius: 5px;
   font-size: 11px; }
 
-[id*="aboutthecamp"] img {
+.region-content .block-region-content .block-block-content:first-child .field--name-body img {
   max-width: 340px;
   position: absolute;
   top: -70px;
@@ -141,6 +234,25 @@ ul.menu a {
   padding: 15px;
   min-height: 500px; }
 
+.block-block-content {
+  width: 100%; }
+
+.region-header-bottom {
+  display: -ms-flexbox;
+  display: flex; }
+
+.flex-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.flex-column {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
 .block-system-branding-block {
   display: -ms-flexbox;
   display: flex;
@@ -157,34 +269,5 @@ ul.menu a {
 
 ul li {
   margin-right: 1.4em; }
-
-.region-header-bottom {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin: 2em auto;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-line-pack: center;
-  align-content: center; }
-
-.region-header-bottom .field--name-body p {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-align: center;
-  align-items: center;
-  margin: 0; }
-
-.region-header-bottom .field--name-body p a {
-  margin-top: 0.7em;
-  background: url("../images/register_now.svg") no-repeat scroll 0 0 transparent;
-  color: transparent;
-  font-size: 2.5em;
-  width: 140px; }
 
 /*# sourceMappingURL=main.css.map */
