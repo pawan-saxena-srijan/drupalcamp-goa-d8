@@ -11,3 +11,15 @@
     padding: 15px;
     min-height: 500px;
 }
+.block-block-content {
+    width: 100%;
+}
+.region-header-bottom {
+    display: flex;
+}
+.flex-row {
+    @include flex(row);
+}
+.flex-column {
+    @include flex(column);
+}

@@ -21,23 +21,3 @@ ul {
         margin-right: 1.4em;
     }
 }
-
-.region-header-bottom {
-    @include flex(row);
-    justify-content: center;
-    margin: 2em auto;
-    align-items: center;
-    align-content: center;
-    .field--name-body p {
-        @include flex(column);
-        align-items: center;
-        margin: 0;
-        a {
-            margin-top: 0.7em;
-            background: url("../images/register_now.svg") no-repeat scroll 0 0 transparent;
-            color: transparent;
-            font-size: 2.5em;
-            width: 140px;
-        }
-    }
-}
