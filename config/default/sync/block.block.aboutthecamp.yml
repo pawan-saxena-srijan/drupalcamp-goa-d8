@@ -2,10 +2,6 @@ uuid: 22ed76f1-0dd3-46fd-b6d9-d86199993732
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:basic:6536c100-10b4-4936-979e-05e6df035c30'
-  module:
-    - block_content
   theme:
     - goacamp
 id: aboutthecamp

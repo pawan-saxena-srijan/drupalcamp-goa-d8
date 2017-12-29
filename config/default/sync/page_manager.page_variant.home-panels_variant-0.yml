@@ -7,7 +7,10 @@ dependencies:
     - views.view.news_and_updates
     - views.view.session_tracks
     - views.view.spronsors
+  content:
+    - 'block_content:basic:7dffe8a5-7a51-4b27-8253-5496fc3a8faa'
   module:
+    - block_content
     - panels
     - views
 id: home-panels_variant-0
@@ -23,7 +26,7 @@ variant_settings:
       views_label: ''
       items_per_page: none
       region: content
-      weight: 0
+      weight: -1
       uuid: 7a2c4c40-2976-40a8-800d-3ba2a9b5ca21
       context_mapping: {  }
     36e187e5-d27f-4d22-82b9-2196250a7a05:
@@ -45,8 +48,20 @@ variant_settings:
       views_label: ''
       items_per_page: none
       region: content
-      weight: 0
+      weight: 1
       uuid: 2db3403b-d4a5-49e9-8842-392fee10eb36
+      context_mapping: {  }
+    f899ed8e-13a0-4c01-8306-65acfa682b8a:
+      id: 'block_content:7dffe8a5-7a51-4b27-8253-5496fc3a8faa'
+      label: 'Become a Sponsor'
+      provider: block_content
+      label_display: '0'
+      status: true
+      info: ''
+      view_mode: full
+      region: content
+      weight: 2
+      uuid: f899ed8e-13a0-4c01-8306-65acfa682b8a
       context_mapping: {  }
   id: panels_variant
   uuid: 01521404-c82b-46a8-a017-717bfe1d84b1

@@ -1,19 +1,23 @@
-uuid: 67961ab8-9c50-4fcf-9e74-9578d721393d
+uuid: 9e3c5f31-90f9-4764-a0e2-0e6ae49fa2f7
 langcode: en
 status: true
 dependencies:
+  content:
+    - 'block_content:basic:8b4e9c42-06a3-4583-adb7-500a00c7072d'
+  module:
+    - block_content
   theme:
     - goacamp
 id: registernow
 theme: goacamp
 region: header_bottom
-weight: -6
+weight: 0
 provider: null
-plugin: 'block_content:bcd95b70-cd97-45f6-8dc6-78a85e36aeb1'
+plugin: 'block_content:8b4e9c42-06a3-4583-adb7-500a00c7072d'
 settings:
-  id: 'block_content:bcd95b70-cd97-45f6-8dc6-78a85e36aeb1'
+  id: 'block_content:8b4e9c42-06a3-4583-adb7-500a00c7072d'
   label: 'Register Now'
-  provider: core
+  provider: block_content
   label_display: '0'
   status: true
   info: ''

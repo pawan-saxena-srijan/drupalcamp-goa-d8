@@ -1,0 +1,9 @@
+uuid: e58f56b3-f1bb-4b2c-8f89-a63e90c0380f
+langcode: en
+status: true
+dependencies: {  }
+name: 'Volunteer Interests'
+vid: volunteer_
+description: 'The list of interests of Volunteers'
+hierarchy: 0
+weight: 0

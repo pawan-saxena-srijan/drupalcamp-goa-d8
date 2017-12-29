@@ -1,0 +1,174 @@
+uuid: 185960b9-86d6-4dee-a360-dcc4c8d19dc5
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+uid: 1
+template: false
+id: volunteer
+title: Volunteer_form
+description: ''
+category: ''
+elements: "processed_text:\n  '#type': processed_text\n  '#text': \"<div class=\\\"pre-instructions\\\">\\r\\n<p><b>DrupalCamp Goa</b> is going to be a destination DrupalCamp in India and we are tirelessly working towards making it the finest Drupalcamp ever happened so far. Since Volunteers are the lifelines of any event, we will be relying on passionate and dedicated volunteers who would use their time and skills to make it happen.</p>\\r\\n\\r\\n<p>If you love Drupal the way we do, and are interested in contributing to <b>DrupalCamp Goa</b> then we will welcome your support.</p>\\r\\n\\r\\n<p><b>Traits of Volunteers we are looking for:</b></p>\\r\\n\\r\\n<ul>\\r\\n\\t<li>People who are passionate about Drupal and Open Source.</li>\\r\\n\\t<li>People who are familiar with the Drupal community and its needs.</li>\\r\\n\\t<li>People who would adhere to the committed no. of hours.</li>\\r\\n\\t<li>People who would get things done, bring in new perspectives.</li>\\r\\n</ul>\\r\\n\\r\\n<p><b>Our commitment to you</b></p>\\r\\n\\r\\n<p><b>DrupalCamp Goa</b> Team will make sure to reach out to every potential volunteer, will communicate the status of the application, will be unbiased towards selection of volunteers.</p>\\r\\n\\r\\n<p><b>Become a Volunteer</b><br />\\r\\nYou can register as a volunteer by filling the following form. We will contact you as soon as possible to listen to your expectations and make further arrangements.</p>\\r\\n</div>\\r\\n\"\n  '#format': full_html\nvolunteer:\n  '#type': webform_wizard_page\n  '#title': Volunteer\n  '#open': true\n  first_name:\n    '#type': textfield\n    '#title': 'Full Name'\n    '#help': 'Your Name'\n    '#title_display': inline\n    '#description_display': before\n    '#minlength': '2'\n    '#maxlength': '70'\n    '#size': '60'\n    '#autocomplete': 'off'\n    '#required': true\n    '#required_error': 'Please provide your full name'\n  email_address:\n    '#type': email\n    '#title': 'Email Address'\n    '#help': 'Your Email Address.'\n    '#title_display': inline\n    '#description_display': tooltip\n    '#minlength': '11'\n    '#maxlength': '60'\n    '#size': '60'\n    '#autocomplete': 'off'\n    '#required': true\n    '#required_error': 'Please provide your Email Address'\n  mobile_number:\n    '#type': tel\n    '#title': 'Mobile Number'\n    '#title_display': inline\n    '#description_display': tooltip\n    '#autocomplete': 'off'\n    '#required': true\n    '#international': true\n    '#international_initial_country': IN\n  i_m_interested_in:\n    '#type': webform_term_checkboxes\n    '#title': ' I''m interested in:'\n    '#multiple': 5\n    '#multiple_error': 'You won''t be able to manage everything ;) Please select max 5 values in checklist.'\n    '#title_display': inline\n    '#description_display': tooltip\n    '#required': true\n    '#vocabulary': volunteer_\n    '#breadcrumb_delimiter': ''\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Let''s Do It!'\n  '#reset_hide': true\n  '#wizard_prev_hide': true\n  '#wizard_next_hide': true\n"
+css: ''
+javascript: ''
+settings:
+  ajax: true
+  ajax_scroll_top: form
+  page: true
+  page_submit_path: volunteer/register
+  page_confirm_path: volunteer/register/submit
+  form_submit_once: true
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: true
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_autofocus: true
+  form_details_toggle: false
+  form_login: false
+  form_login_message: ''
+  submission_label: 'Your Interests have been submitted'
+  submission_log: false
+  submission_user_columns:
+    - serial
+    - created
+    - remote_addr
+    - sid
+    - label
+    - completed
+    - changed
+    - element__first_name
+    - element__email_address
+    - element__mobile_number
+    - element__i_m_interested_in
+  submission_login: false
+  submission_login_message: ''
+  submission_exception_message: ''
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_start_label: ''
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  confirmation_type: message
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  token_update: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers:
+  emal_handler_volunteer:
+    id: email
+    label: 'Emal Handler Volunteer'
+    handler_id: emal_handler_volunteer
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: gaurang.agrawal@srijan.net
+      to_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      from_mail: '[webform_submission:values:email_address:raw]'
+      from_options: {  }
+      from_name: default
+      subject: 'Hi, I am interested in volunteering for Drupalcamp Goa'
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      html: true
+      attachments: false
+      twig: false
+      debug: false
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
