@@ -334,13 +334,14 @@ ul li {
 
 .site-footer {
   background: url("../images/footer_bg.png") no-repeat scroll 0 0;
-  padding: 100px 0 50px; }
+  padding: 100px 0 30px;
+  background-size: cover; }
 
 .region-footer-first {
   padding-left: 80px; }
 
 .region-footer-second {
-  padding-top: 40px;
+  padding-top: 30px;
   border-top: solid 2px white;
   margin-top: 100px; }
 
@@ -358,7 +359,9 @@ ul li {
   width: 25%; }
 
 .menu--footer > ul.menu > li > a {
-  margin-bottom: 35px; }
+  margin-bottom: 35px;
+  font-size: 18px;
+  font-family: "Rockwell-regular"; }
 
 .menu--footer > ul.menu > li:last-of-type li {
   display: inline-block;
@@ -376,6 +379,8 @@ ul li {
 .menu--footer li a {
   color: white;
   display: inline-block;
-  margin: 10px 0; }
+  margin: 10px 0;
+  font-family: "Raleway-Regular";
+  font-size: 14px; }
 
 /*# sourceMappingURL=main.css.map */

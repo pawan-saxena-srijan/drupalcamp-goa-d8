@@ -1,6 +1,7 @@
 .site-footer {
   background: url("../images/footer_bg.png") no-repeat scroll 0 0;
-  padding: 100px 0 50px;
+  padding: 100px 0 30px;
+  background-size: cover;
 }
 
 .region-footer-first {
@@ -8,7 +9,7 @@
 }
 
 .region-footer-second {
-  padding-top: 40px;
+  padding-top: 30px;
   border-top: solid 2px white;
   margin-top: 100px;
 
@@ -32,6 +33,8 @@
 
     > a {
       margin-bottom: 35px;
+      font-size: 18px;
+      font-family: $rockwell-regular;
     }
 
     &:last-of-type li {
@@ -54,5 +57,7 @@
     color: white;
     display: inline-block;
     margin: 10px 0;
+    font-family: $raleway-regular;
+    font-size: 14px;
   }
 }
