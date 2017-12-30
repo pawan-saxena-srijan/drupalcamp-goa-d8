@@ -332,4 +332,50 @@ ul.menu a {
 ul li {
   margin-right: 1.4em; }
 
+.site-footer {
+  background: url("../images/footer_bg.png") no-repeat scroll 0 0;
+  padding: 100px 0 50px; }
+
+.region-footer-first {
+  padding-left: 80px; }
+
+.region-footer-second {
+  padding-top: 40px;
+  border-top: solid 2px white;
+  margin-top: 100px; }
+
+.region-footer-second p {
+  color: white;
+  text-align: center; }
+
+.menu--footer ul.menu {
+  padding: 0; }
+
+.menu--footer ul.menu ul.menu {
+  display: block; }
+
+.menu--footer > ul.menu > li {
+  width: 25%; }
+
+.menu--footer > ul.menu > li > a {
+  margin-bottom: 35px; }
+
+.menu--footer > ul.menu > li:last-of-type li {
+  display: inline-block;
+  margin: 0; }
+
+.menu--footer > ul.menu > li:last-of-type li a {
+  width: 30px;
+  height: 30px;
+  text-indent: -9999px;
+  display: block;
+  background-size: cover;
+  background: url("../images/twitter.svg") no-repeat scroll 0 0 transparent;
+  margin-right: 10px; }
+
+.menu--footer li a {
+  color: white;
+  display: inline-block;
+  margin: 10px 0; }
+
 /*# sourceMappingURL=main.css.map */
