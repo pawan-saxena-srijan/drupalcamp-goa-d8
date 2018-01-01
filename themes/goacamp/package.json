@@ -4,7 +4,6 @@
   "description": "",
   "main": "gulpfile.js",
   "devDependencies": {
-    "author": "Srijan",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-sass": "^2.3.2",

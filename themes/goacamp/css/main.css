@@ -383,4 +383,53 @@ ul li {
   font-family: "Raleway-Regular";
   font-size: 14px; }
 
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 1, 2018, 12:24:02 PM
+    Author     : yogendra
+*/
+form {
+  margin: 10px 0 10px 0; }
+
+form .form-item {
+  margin: 10px 0 10px 0;
+  width: 100%; }
+
+form label {
+  font-weight: bold;
+  width: 10%;
+  float: left;
+  margin-top: 10px;
+  color: #207DCC; }
+
+form input {
+  display: block;
+  height: 25px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc; }
+
+form input.form-submit {
+  color: #fff;
+  height: auto;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: .08em;
+  border-radius: 0;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+  transition: all 1s ease;
+  background: #207DCC; }
+
 /*# sourceMappingURL=main.css.map */
