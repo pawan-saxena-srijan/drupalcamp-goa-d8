@@ -249,12 +249,19 @@ a {
 
 [class*="blocknews-and-updates"] {
   padding: 8em 0 8em 5em;
-  color: #FFFFFF;
   background: #FFFFFF;
   box-sizing: border-box; }
 
 [class*="blocknews-and-updates"] h2 {
-  color: #63c6e5; }
+  color: #63c6e5;
+  margin-bottom: 16px; }
+
+[class*="blocknews-and-updates"] .views-field-title a {
+  color: #207DCC;
+  font-family: "Raleway-Bold"; }
+
+[class*="blocknews-and-updates"] .views-field-body {
+  max-width: 600px; }
 
 ul.menu {
   list-style: none;
