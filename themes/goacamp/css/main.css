@@ -10,7 +10,7 @@ a {
   text-decoration: none;
   color: #207DCC; }
 
-.heading, .region-content .block-region-content .block-block-content:first-child h2, [class*="blocknews-and-updates"] h2, [class*="views-blocksession-tracks"] h2, [class*="views-blockspronsors"] h2 {
+.heading, .region-content .block-region-content .block-block-content:first-child h2, [class*="blocknews-and-updates"] h2, [class*="views-blocksession-tracks"] h2, [class*="views-blockspronsors"] h2, .become-sponsors .become-sponsors-content h3 {
   font-family: "Rockwell-regular";
   font-size: 34px;
   margin-top: 0; }
@@ -353,23 +353,84 @@ a {
   margin-top: 4em; }
 
 [class*="views-blockspronsors"] .view-content h3 {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 2em; }
 
-[class*="views-blockspronsors"] .view-content .views-row {
-  margin-bottom: 2em;
-  padding-bottom: 2em;
-  position: relative; }
+[class*="views-blockspronsors"] .view-content h3 a {
+  border-bottom: 1px solid #207DCC; }
 
-[class*="views-blockspronsors"] .view-content .views-row:after {
+[class*="views-blockspronsors"] .view-content ul {
+  padding: 0;
+  list-style: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  position: relative;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+[class*="views-blockspronsors"] .view-content ul:after {
   content: "";
-  width: 50%;
+  width: 60%;
   height: 1px;
   position: absolute;
-  left: 25%;
-  border-bottom: 1px solid #ebebeb; }
+  bottom: 0;
+  left: 20%;
+  border-bottom: 1px solid #cccccc; }
 
-[class*="views-blockspronsors"] .view-content .views-row:last-child:after {
+[class*="views-blockspronsors"] .view-content .item-list:last-child ul:after {
   border-bottom: none; }
+
+[class*="views-blockspronsors"] .view-content li {
+  margin-bottom: 2em;
+  margin-right: 3em;
+  position: relative; }
+
+[class*="views-blockspronsors"] .view-content li:last-child {
+  margin-right: 0; }
+
+.become-sponsors {
+  padding: 8em 4em;
+  position: relative;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  display: -ms-flexbox;
+  display: flex; }
+
+.become-sponsors img {
+  max-width: 300px;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.become-sponsors .become-sponsors-content {
+  width: 600px;
+  text-align: right; }
+
+.become-sponsors .become-sponsors-content h3 {
+  color: #63c6e5;
+  margin-bottom: 0.4em; }
+
+.become-sponsors .become-sponsors-content h4 {
+  margin-top: 0;
+  font-family: "Raleway-Bold";
+  font-size: 15px;
+  color: #207DCC; }
+
+.become-sponsors .become-sponsors-content p {
+  margin: 0;
+  color: #999;
+  line-height: 1.2;
+  font-size: 15px; }
+
+.become-sponsors .become-sponsors-content a {
+  margin-top: 2em;
+  background-image: linear-gradient(to right, #6DE5EC 0%, #00aeee 100%);
+  display: inline-block;
+  padding: 0.5em 1.3em;
+  color: #fff;
+  border-radius: 5px; }
 
 ul.menu {
   list-style: none;
