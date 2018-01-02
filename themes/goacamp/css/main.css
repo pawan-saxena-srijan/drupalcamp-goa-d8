@@ -10,9 +10,10 @@ a {
   text-decoration: none;
   color: #207DCC; }
 
-.heading, .region-content .block-region-content .block-block-content:first-child h2, [class*="blocknews-and-updates"] h2 {
+.heading, .region-content .block-region-content .block-block-content:first-child h2, [class*="blocknews-and-updates"] h2, [class*="views-blocksession-tracks"] h2 {
   font-family: "Rockwell-regular";
-  font-size: 34px; }
+  font-size: 34px;
+  margin-top: 0; }
 
 .more-link a {
   padding: 7px 20px;
@@ -27,7 +28,7 @@ a {
 .more-link a:hover {
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3); }
 
-.hvr-sweep-to-right, .region-content .block-region-content .block-block-content:first-child .field--name-body a {
+.hvr-sweep-to-right, .region-content .block-region-content .block-block-content:first-child .field--name-body a, [class*="views-blocksession-tracks"] .view-footer a {
   vertical-align: middle;
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
@@ -35,7 +36,7 @@ a {
   transition-property: color;
   transition-duration: 0.3s; }
 
-.hvr-sweep-to-right:before, .region-content .block-region-content .block-block-content:first-child .field--name-body a:before {
+.hvr-sweep-to-right:before, .region-content .block-region-content .block-block-content:first-child .field--name-body a:before, [class*="views-blocksession-tracks"] .view-footer a:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -51,7 +52,7 @@ a {
   transition-duration: 0.3s;
   transition-timing-function: ease-out; }
 
-.hvr-sweep-to-right:hover:before, .region-content .block-region-content .block-block-content:first-child .field--name-body a:hover:before, .hvr-sweep-to-right:focus:before, .region-content .block-region-content .block-block-content:first-child .field--name-body a:focus:before, .hvr-sweep-to-right:active:before, .region-content .block-region-content .block-block-content:first-child .field--name-body a:active:before {
+.hvr-sweep-to-right:hover:before, .region-content .block-region-content .block-block-content:first-child .field--name-body a:hover:before, [class*="views-blocksession-tracks"] .view-footer a:hover:before, .hvr-sweep-to-right:focus:before, .region-content .block-region-content .block-block-content:first-child .field--name-body a:focus:before, [class*="views-blocksession-tracks"] .view-footer a:focus:before, .hvr-sweep-to-right:active:before, .region-content .block-region-content .block-block-content:first-child .field--name-body a:active:before, [class*="views-blocksession-tracks"] .view-footer a:active:before {
   -ms-transform: scaleX(1);
   transform: scaleX(1); }
 
@@ -248,7 +249,7 @@ a {
   right: 0; }
 
 [class*="blocknews-and-updates"] {
-  padding: 8em 0 8em 5em;
+  padding: 6em 4em 7em;
   background: #FFFFFF;
   box-sizing: border-box; }
 
@@ -262,6 +263,82 @@ a {
 
 [class*="blocknews-and-updates"] .views-field-body {
   max-width: 600px; }
+
+[class*="blocknews-and-updates"] .views-field-body p {
+  color: #999; }
+
+[class*="views-blocksession-tracks"] {
+  padding: 4em;
+  background: #207DCC;
+  box-sizing: border-box; }
+
+[class*="views-blocksession-tracks"] h2 {
+  text-align: center;
+  margin-bottom: 1.5em;
+  color: #63c6e5; }
+
+[class*="views-blocksession-tracks"] a {
+  color: #FFFFFF; }
+
+[class*="views-blocksession-tracks"] .view-footer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+[class*="views-blocksession-tracks"] .view-footer a {
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-family: "Raleway-Bold";
+  margin-top: 1em;
+  letter-spacing: 0.6px;
+  display: inline-block;
+  padding: 0.6em 18px;
+  border-radius: 5px;
+  font-size: 11px;
+  cursor: pointer;
+  display: inline-block; }
+
+[class*="views-blocksession-tracks"] .view-footer a:before {
+  background: #FFFFFF; }
+
+[class*="views-blocksession-tracks"] .view-footer a:hover, [class*="views-blocksession-tracks"] .view-footer a:focus, [class*="views-blocksession-tracks"] .view-footer a:active {
+  color: #207DCC; }
+
+.view-session-tracks .view-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.view-session-tracks .view-content .field-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.view-session-tracks .view-content a {
+  font-family: "Raleway-Medium";
+  font-size: 15px; }
+
+.view-session-tracks .view-content img {
+  height: 70px;
+  width: auto; }
+
+.view-session-tracks .view-content .views-row {
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%;
+  margin-bottom: 2em; }
+
+.view-session-tracks .view-content .views-field-field-logo {
+  margin-bottom: 0.5em; }
 
 ul.menu {
   list-style: none;
@@ -287,14 +364,14 @@ ul.menu a {
 .menu--main a {
   text-transform: uppercase; }
 
-.menu-item--expanded {
+.menu--main .menu-item--expanded {
   position: relative; }
 
-.menu-item--expanded > a {
+.menu--main .menu-item--expanded > a {
   position: relative;
   padding-bottom: 0.8em; }
 
-.menu-item--expanded > a:after {
+.menu--main .menu-item--expanded > a:after {
   content: "";
   position: absolute;
   left: 40%;
@@ -307,7 +384,7 @@ ul.menu a {
   border-right: 10px solid transparent;
   border-bottom: 10px solid #207DCC; }
 
-.menu-item--expanded .menu {
+.menu--main .menu-item--expanded .menu {
   position: absolute;
   padding: 0;
   opacity: 0;
@@ -322,26 +399,26 @@ ul.menu a {
   z-index: 1;
   transition: 0.3s all ease; }
 
-.menu-item--expanded .menu li {
+.menu--main .menu-item--expanded .menu li {
   margin-bottom: 8px;
   border-bottom: 1px solid #e6e6e6;
   margin-right: 0;
   padding-bottom: 0.2em; }
 
-.menu-item--expanded .menu li:last-child {
+.menu--main .menu-item--expanded .menu li:last-child {
   border-bottom: none;
   padding-bottom: 0;
   margin-bottom: 0; }
 
-.menu-item--expanded .menu a {
+.menu--main .menu-item--expanded .menu a {
   color: #FFFFFF;
   font-size: 14px;
   letter-spacing: 0.5px; }
 
-.menu-item--expanded:hover .menu, .menu-item--expanded:focus .menu {
+.menu--main .menu-item--expanded:hover .menu, .menu--main .menu-item--expanded:focus .menu {
   opacity: 1; }
 
-.menu-item--expanded:hover > a:after, .menu-item--expanded:focus > a:after {
+.menu--main .menu-item--expanded:hover > a:after, .menu--main .menu-item--expanded:focus > a:after {
   opacity: 1; }
 
 .region-header {
