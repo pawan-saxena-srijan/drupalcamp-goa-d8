@@ -280,6 +280,63 @@ ul.menu a {
 .menu--main a {
   text-transform: uppercase; }
 
+.menu-item--expanded {
+  position: relative; }
+
+.menu-item--expanded > a {
+  position: relative;
+  padding-bottom: 0.8em; }
+
+.menu-item--expanded > a:after {
+  content: "";
+  position: absolute;
+  left: 40%;
+  bottom: 0;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  transition: 0.3s all ease;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #207DCC; }
+
+.menu-item--expanded .menu {
+  position: absolute;
+  padding: 0;
+  opacity: 0;
+  margin-top: 0.8em;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 200px;
+  background: #207DCC;
+  padding: 10px;
+  z-index: 1;
+  transition: 0.3s all ease; }
+
+.menu-item--expanded .menu li {
+  margin-bottom: 8px;
+  border-bottom: 1px solid #e6e6e6;
+  margin-right: 0;
+  padding-bottom: 0.2em; }
+
+.menu-item--expanded .menu li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0; }
+
+.menu-item--expanded .menu a {
+  color: #FFFFFF;
+  font-size: 14px;
+  letter-spacing: 0.5px; }
+
+.menu-item--expanded:hover .menu, .menu-item--expanded:focus .menu {
+  opacity: 1; }
+
+.menu-item--expanded:hover > a:after, .menu-item--expanded:focus > a:after {
+  opacity: 1; }
+
 .region-header {
   display: -ms-flexbox;
   display: flex;
