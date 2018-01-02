@@ -141,11 +141,21 @@
 
 [class*="blocknews-and-updates"] {
     padding: 8em 0 8em 5em;
-    color: #FFFFFF;
+    // color: #FFFFFF;
     background: $white;
     box-sizing: border-box;
     h2 {
         @extend .heading;
         color: $color_light_blue;
+        margin-bottom: 16px;
+    }
+    .views-field-title {
+        a {
+            color: $color_links;
+            font-family: $raleway-bold;
+        }
+    }
+    .views-field-body {
+        max-width: 600px;
     }
 }
