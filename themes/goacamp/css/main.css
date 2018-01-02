@@ -10,7 +10,7 @@ a {
   text-decoration: none;
   color: #207DCC; }
 
-.heading, .region-content .block-region-content .block-block-content:first-child h2, [class*="blocknews-and-updates"] h2, [class*="views-blocksession-tracks"] h2 {
+.heading, .region-content .block-region-content .block-block-content:first-child h2, [class*="blocknews-and-updates"] h2, [class*="views-blocksession-tracks"] h2, [class*="views-blockspronsors"] h2 {
   font-family: "Rockwell-regular";
   font-size: 34px;
   margin-top: 0; }
@@ -269,10 +269,11 @@ a {
 
 [class*="views-blocksession-tracks"] {
   padding: 4em;
-  background: #207DCC;
+  background-image: radial-gradient(ellipse farthest-side at right center, #05AFCC 0%, #207DCC 100%);
   box-sizing: border-box; }
 
 [class*="views-blocksession-tracks"] h2 {
+  color: #FFFFFF !important;
   text-align: center;
   margin-bottom: 1.5em;
   color: #63c6e5; }
@@ -339,6 +340,36 @@ a {
 
 .view-session-tracks .view-content .views-field-field-logo {
   margin-bottom: 0.5em; }
+
+[class*="views-blockspronsors"] {
+  padding: 4em;
+  box-sizing: border-box; }
+
+[class*="views-blockspronsors"] h2 {
+  text-align: center;
+  color: #63c6e5 !important; }
+
+[class*="views-blockspronsors"] .view-content {
+  margin-top: 4em; }
+
+[class*="views-blockspronsors"] .view-content h3 {
+  text-align: center; }
+
+[class*="views-blockspronsors"] .view-content .views-row {
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  position: relative; }
+
+[class*="views-blockspronsors"] .view-content .views-row:after {
+  content: "";
+  width: 50%;
+  height: 1px;
+  position: absolute;
+  left: 25%;
+  border-bottom: 1px solid #ebebeb; }
+
+[class*="views-blockspronsors"] .view-content .views-row:last-child:after {
+  border-bottom: none; }
 
 ul.menu {
   list-style: none;
