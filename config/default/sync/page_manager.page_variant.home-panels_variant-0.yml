@@ -8,6 +8,7 @@ dependencies:
     - views.view.session_tracks
     - views.view.spronsors
   content:
+    - 'block_content:basic:3b4d0c33-b88d-403d-adb9-5dcbebe41ad4'
     - 'block_content:basic:7dffe8a5-7a51-4b27-8253-5496fc3a8faa'
   module:
     - block_content
@@ -62,6 +63,18 @@ variant_settings:
       region: content
       weight: 2
       uuid: f899ed8e-13a0-4c01-8306-65acfa682b8a
+      context_mapping: {  }
+    73807525-f182-405c-8150-bb13c9025396:
+      id: 'block_content:3b4d0c33-b88d-403d-adb9-5dcbebe41ad4'
+      label: 'About the Camp'
+      provider: block_content
+      label_display: visible
+      status: true
+      info: ''
+      view_mode: full
+      region: content
+      weight: -2
+      uuid: 73807525-f182-405c-8150-bb13c9025396
       context_mapping: {  }
   id: panels_variant
   uuid: 01521404-c82b-46a8-a017-717bfe1d84b1

@@ -57,7 +57,7 @@ display:
           items_per_page: null
           offset: 0
       style:
-        type: default
+        type: html_list
         options:
           grouping:
             -
@@ -66,6 +66,9 @@ display:
               rendered_strip: false
           row_class: ''
           default_row_class: true
+          type: ul
+          wrapper_class: item-list
+          class: ''
       row:
         type: fields
       fields:

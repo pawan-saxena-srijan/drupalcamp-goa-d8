@@ -3,7 +3,7 @@ name: drupalcampgoa
 mail: vermaudit28@gmail.com
 slogan: ''
 page:
-  403: ''
+  403: /user/login
   404: ''
   front: /home
 admin_compact_mode: false
