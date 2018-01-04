@@ -63,7 +63,7 @@ display:
             -
               field: field_sponsorship_category
               rendered: true
-              rendered_strip: false
+              rendered_strip: true
           row_class: ''
           default_row_class: true
           type: ul
