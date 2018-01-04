@@ -1,21 +1,20 @@
-uuid: b749435d-cfb0-4e50-bc89-60da335dadef
+uuid: 211720c2-5849-476c-b7fc-45a6acb35898
 langcode: en
 status: true
 dependencies:
   module:
-    - datetime
     - field_permissions
     - node
+    - text
 third_party_settings:
   field_permissions:
-    permission_type: custom
-id: node.field_session_date
-field_name: field_session_date
+    permission_type: public
+id: node.field_prerequisite_for_attendees
+field_name: field_prerequisite_for_attendees
 entity_type: node
-type: datetime
-settings:
-  datetime_type: datetime
-module: datetime
+type: text_long
+settings: {  }
+module: text
 locked: false
 cardinality: 1
 translatable: true

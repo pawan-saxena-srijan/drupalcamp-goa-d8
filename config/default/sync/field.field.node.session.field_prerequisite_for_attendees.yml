@@ -1,0 +1,21 @@
+uuid: 9339a388-7384-40d7-865c-a82a2a934a25
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prerequisite_for_attendees
+    - node.type.session
+  module:
+    - text
+id: node.session.field_prerequisite_for_attendees
+field_name: field_prerequisite_for_attendees
+entity_type: node
+bundle: session
+label: 'prerequisite for attendees'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

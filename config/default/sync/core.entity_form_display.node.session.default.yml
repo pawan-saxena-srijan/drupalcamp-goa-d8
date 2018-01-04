@@ -6,11 +6,11 @@ dependencies:
     - field.field.node.session.body
     - field.field.node.session.field_benefactions
     - field.field.node.session.field_experience_level
-    - field.field.node.session.field_prerequisites_for_attendee
+    - field.field.node.session.field_prerequisite_for_attendees
     - field.field.node.session.field_room
     - field.field.node.session.field_session_date
-    - field.field.node.session.field_session_duration
     - field.field.node.session.field_session_ratings
+    - field.field.node.session.field_speakers
     - field.field.node.session.field_tracks
     - node.type.session
   module:
@@ -33,12 +33,12 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 11
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
   field_benefactions:
-    weight: 9
+    weight: 8
     settings:
       rows: 5
       placeholder: ''
@@ -51,17 +51,16 @@ content:
     third_party_settings: {  }
     type: options_select
     region: content
-  field_prerequisites_for_attendee:
-    weight: 8
+  field_prerequisite_for_attendees:
+    weight: 5
     settings:
-      match_operator: CONTAINS
-      size: 60
+      rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: text_textarea
     region: content
   field_room:
-    weight: 4
+    weight: 3
     settings:
       size: 60
       placeholder: ''
@@ -74,16 +73,17 @@ content:
     third_party_settings: {  }
     type: datetime_default
     region: content
-  field_session_duration:
-    weight: 3
+  field_speakers:
+    weight: 9
     settings:
+      match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textfield
+    type: entity_reference_autocomplete
     region: content
   field_tracks:
-    weight: 5
+    weight: 4
     settings: {  }
     third_party_settings: {  }
     type: options_select
@@ -104,7 +104,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 10
+    weight: 11
     settings:
       match_operator: CONTAINS
       size: 60

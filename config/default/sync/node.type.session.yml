@@ -6,14 +6,12 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus:
-      - admin
-      - main
-    parent: 'main:'
+    available_menus: {  }
+    parent: ''
 name: Session
 type: session
 description: 'Will have the details about Drupal Camp Sessions.'
 help: ''
-new_revision: true
-preview_mode: 1
+new_revision: false
+preview_mode: 0
 display_submitted: false
