@@ -7,10 +7,10 @@ close: null
 uid: 1
 template: false
 id: sponsor_webform
-title: 'Sponsor Registration'
+title: 'Sponsor DrupalCamp Goa 2018'
 description: 'If you are interested in Sponsoring DrupalCamp Goa, Please register here.'
 category: ''
-elements: "sponsorship_registration:\n  '#type': webform_wizard_page\n  '#title': 'Sponsorship Registration'\n  '#open': true\n  sponsorship_company_name:\n    '#type': textfield\n    '#title': 'Company Name'\n    '#title_display': inline\n    '#description_display': tooltip\n    '#required': true\n  person_of_contact:\n    '#type': textfield\n    '#title': 'Person of Contact'\n    '#help': 'To whom should we contact for further information.'\n    '#title_display': inline\n    '#description_display': tooltip\n    '#required': true\n  email_address:\n    '#type': email\n    '#title': 'Email Address'\n    '#help': 'Contact&#39;s Email Address'\n    '#title_display': inline\n    '#description_display': tooltip\n    '#required': true\n  phone_number:\n    '#type': tel\n    '#title': 'Phone Number'\n    '#title_display': inline\n    '#description_display': tooltip\n    '#minlength': '7'\n    '#maxlength': '15'\n    '#size': '60'\n    '#autocomplete': 'off'\n    '#required': true\n    '#international': true\n    '#international_initial_country': IN\n  interested_in_:\n    '#type': webform_term_select\n    '#title': 'Interested In?'\n    '#help': 'Please state your interest in category of sponsorship'\n    '#title_display': inline\n    '#description_display': tooltip\n    '#select2': true\n    '#required': true\n    '#vocabulary': sponsorship_categories\n    '#breadcrumb_delimiter': ''\n  any_queries_message_:\n    '#type': textarea\n    '#title': 'Any Queries/Message?'\n    '#title_display': inline\n    '#description_display': tooltip\n"
+elements: "processed_text:\n  '#type': processed_text\n  '#text': \"<div class=\\\"node__content\\\">\\n<div class=\\\"clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item quickedit-field\\\" data-quickedit-field-id=\\\"node/10/body/en/full\\\" property=\\\"schema:text\\\">\\n<p>DrupalCamp Goa is an international event which brings together the people who use, develop, design and support the Drupal platform with those who are exploring the possibility of joining the Drupal community.</p>\\n\\n<p>DrupalCamp Goa features dozens of curated sessions and panels from some of the most influential people and brightest minds within the Drupal community and beyond, as well as countless opportunities for networking, code sprints and informal conversations. Official Partners of DrupalCamp London have the opportunity to present their company to a targeted audience of 150 highly experienced Drupal developers, Site Architects, web professionals, project managers.</p>\\n\\n<p>Being an official Partner of DrupalCamp Goa will help you increase the equity of your brand as a company or organisation that supports one of the fastest-growing open source software communities in the world.</p>\\n</div>\\n</div>\\n\"\n  '#format': full_html\nsponsorship_registration:\n  '#type': webform_wizard_page\n  '#title': 'Sponsorship Registration'\n  '#open': true\n  sponsorship_company_name:\n    '#type': textfield\n    '#title': 'Company Name'\n    '#title_display': inline\n    '#description_display': tooltip\n    '#required': true\n  person_of_contact:\n    '#type': textfield\n    '#title': 'Person of Contact'\n    '#help': 'To whom should we contact for further information.'\n    '#title_display': inline\n    '#description_display': tooltip\n    '#required': true\n  email_address:\n    '#type': email\n    '#title': 'Email Address'\n    '#help': 'Contact&#39;s Email Address'\n    '#title_display': inline\n    '#description_display': tooltip\n    '#required': true\n  phone_number:\n    '#type': tel\n    '#title': 'Phone Number'\n    '#title_display': inline\n    '#description_display': tooltip\n    '#minlength': '7'\n    '#maxlength': '15'\n    '#size': '60'\n    '#autocomplete': 'off'\n    '#required': true\n    '#international': true\n    '#international_initial_country': IN\n  interested_in_:\n    '#type': webform_term_select\n    '#title': 'Interested In?'\n    '#help': 'Please state your interest in category of sponsorship'\n    '#title_display': inline\n    '#description_display': tooltip\n    '#select2': true\n    '#required': true\n    '#vocabulary': sponsorship_categories\n    '#breadcrumb_delimiter': ''\n  any_queries_message_:\n    '#type': textarea\n    '#title': 'Any Queries/Message?'\n    '#title_display': inline\n    '#description_display': tooltip\n"
 css: ''
 javascript: ''
 settings:
@@ -23,7 +23,7 @@ settings:
   form_exception_message: ''
   form_open_message: ''
   form_close_message: ''
-  form_previous_submissions: true
+  form_previous_submissions: false
   form_confidential: false
   form_confidential_message: ''
   form_convert_anonymous: false
@@ -54,19 +54,17 @@ settings:
     - element__sponsorship_company_name
     - element__person_of_contact
     - element__email_address
-    - element__sponsor_phone_number
-    - element__sponsor_phone_number__type
-    - element__sponsor_phone_number__phone
-    - element__sponsor_phone_number__ext
     - element__any_queries_message_
+    - element__phone_number
+    - element__interested_in_
   submission_login: false
   submission_login_message: ''
   submission_exception_message: ''
-  wizard_progress_bar: true
+  wizard_progress_bar: false
   wizard_progress_pages: false
   wizard_progress_percentage: false
   wizard_start_label: ''
-  wizard_confirmation: true
+  wizard_confirmation: false
   wizard_confirmation_label: ''
   wizard_track: ''
   preview: 0
