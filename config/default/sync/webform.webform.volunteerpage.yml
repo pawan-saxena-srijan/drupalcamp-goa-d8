@@ -1,0 +1,131 @@
+uuid: c58b6635-10d5-4579-aaa4-a3ab78854f6f
+langcode: en
+status: open
+dependencies: {  }
+open: null
+close: null
+uid: 1
+template: false
+id: volunteerpage
+title: Volunteer
+description: "<p><strong>DrupalCamp Goa</strong>&nbsp;is going to be a destination DrupalCamp in India and we are tirelessly working towards making it the finest Drupalcamp ever happened so far. Since Volunteers are the lifelines of any event, we will be relying on passionate and dedicated volunteers who would use their time and skills to make it happen.</p>\n\n<p>If you love Drupal the way we do, and are interested in contributing to&nbsp;<strong>DrupalCamp Goa</strong>&nbsp;then we will welcome your support.</p>\n\n<p><strong>Traits of Volunteers we are looking for:</strong></p>\n\n<ul>\n\t<li>People who are passionate about Drupal and Open Source.</li>\n\t<li>People who are familiar with the Drupal community and its needs.</li>\n\t<li>People who would adhere to the committed no. of hours.</li>\n\t<li>People who would get things done, bring in new perspectives.</li>\n</ul>\n\n<p><strong>Our commitment to you</strong></p>\n\n<p><strong>DrupalCamp Goa</strong>&nbsp;Team will make sure to reach out to every potential volunteer, will communicate the status of the application, will be unbiased towards selection of volunteers.</p>\n\n<p><strong>Become a Volunteer</strong><br />\nYou can register as a volunteer by filling the following form. We will contact you as soon as possible to listen to your expectations and make further arrangements.</p>"
+category: ''
+elements: "full_name:\n  '#type': textfield\n  '#title': 'Full Name'\ne_mail_id:\n  '#type': email\n  '#title': 'E-mail Id'\n"
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  form_submit_once: false
+  form_exception_message: ''
+  form_open_message: ''
+  form_close_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_reset: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_login: false
+  form_login_message: ''
+  submission_label: ''
+  submission_log: false
+  submission_user_columns: {  }
+  submission_login: false
+  submission_login_message: ''
+  submission_exception_message: ''
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_start_label: ''
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  confirmation_type: page
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_url: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  token_update: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers: {  }

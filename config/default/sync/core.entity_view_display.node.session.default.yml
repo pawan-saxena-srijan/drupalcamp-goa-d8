@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.session.field_experience_level
     - field.field.node.session.field_prerequisite_for_attendees
     - field.field.node.session.field_room
+    - field.field.node.session.field_selected
     - field.field.node.session.field_session_date
     - field.field.node.session.field_session_ratings
     - field.field.node.session.field_speakers
@@ -59,6 +60,16 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_selected:
+    weight: 10
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
     region: content
   field_session_date:
     weight: 0

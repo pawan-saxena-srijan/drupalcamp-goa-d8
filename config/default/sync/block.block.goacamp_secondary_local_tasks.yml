@@ -8,8 +8,8 @@ _core:
   default_config_hash: QeZBeCilQfeET3GeW6ZtJkEiwROADTZktFgKWwPieD4
 id: goacamp_secondary_local_tasks
 theme: goacamp
-region: header
-weight: -1
+region: content
+weight: -3
 provider: null
 plugin: local_tasks_block
 settings:

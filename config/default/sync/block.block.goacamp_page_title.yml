@@ -8,8 +8,8 @@ _core:
   default_config_hash: ZSpc3IoSaLd0PkB02nxjVPBMztIdsTdHek9SiGaqZ_c
 id: goacamp_page_title
 theme: goacamp
-region: header
-weight: -4
+region: content
+weight: -5
 provider: null
 plugin: page_title_block
 settings:

@@ -1,20 +1,21 @@
-uuid: fa40c18f-a5a9-4140-b401-28bde861b8f5
+uuid: 0521b488-252c-44f4-871a-6790233209d1
 langcode: en
 status: true
 dependencies:
   config:
+    - field.storage.node.field_selected
     - node.type.session
-id: node.session.status
-field_name: status
+id: node.session.field_selected
+field_name: field_selected
 entity_type: node
 bundle: session
-label: Published
+label: Selected
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value:
   -
-    value: 1
+    value: 0
 default_value_callback: ''
 settings:
   on_label: 'On'
