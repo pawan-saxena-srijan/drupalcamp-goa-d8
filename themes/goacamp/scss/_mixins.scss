@@ -43,6 +43,10 @@
     background-image: linear-gradient(to right, #6DE5EC 0%, #00aeee 100%);
 }
 
+@mixin buttons-box-shadow {
+    box-shadow: 0px 5px 24px 0px rgba(0,0,0,0.2);
+}
+
 .heading {
     font-family: $rockwell-regular;
     font-size: 34px;
@@ -51,14 +55,16 @@
 
 .more-link {
     a {
-        padding: 7px 20px;
+        padding: 7px 24px;
         @include left-right-gradient;
         text-transform: uppercase;
         color: $white;
+        border-radius: 5px;
+        @include buttons-box-shadow;
         font-size: 11px;
         cursor: pointer;
         font-family: $raleway-bold;
-        transition: 0.5s all ease;
+        transition: 0.3s all ease;
         &:hover {
             box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.3);
         }
