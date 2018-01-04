@@ -40,6 +40,9 @@ form {
   .form-submit {
     @extend .buttons;
     border: none;
+    &:hover, &:focus {
+      border: none;
+    }
   }
   p {
     color: $color_light_blue;
