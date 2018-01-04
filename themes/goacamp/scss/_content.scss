@@ -1,0 +1,8 @@
+.page-title {
+    @extend .heading;
+    color: $color_light_blue;
+}
+.messages {
+    margin-left: 2em;
+    margin-right: 2em;
+}

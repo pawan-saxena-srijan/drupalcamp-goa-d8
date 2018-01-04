@@ -11,51 +11,82 @@ and open the template in the editor.
 //form css
 
 form {
-  margin: 10px 0 10px 0;
+  margin: 2em 0;
   .form-item {
-    margin: 10px 0 10px 0;
     width: 100%;
   }
-
   label {
-    font-weight: bold;
-    width: 10%;
-    float: left;
-    margin-top: 10px;
-    color: $color_links;
+    font-family: $raleway-bold;
+    color: $color_light_blue;
+    font-size: 14px;
+    margin-bottom: 0.5em;
+    display: flex;
+    align-items: center;
   }
 
-  input {
-    display: block;
-    height: 25px;
-    padding: 6px 12px;
+  input, textarea {
+    padding: 8px 12px;
     font-size: 14px;
-    line-height: 1.42857143;
-    color: #555;
-    background-color: #fff;
-    background-image: none;
-    border: 1px solid #ccc;
-
-    &.form-submit {
-      color: #fff;
-      height: auto;
-      font-size: 14px;
-      font-weight: bold;
-      text-align: center;
-      text-decoration: none;
-      text-transform: uppercase;
-      overflow: hidden;
-      letter-spacing: .08em;
-      border-radius: 0;
-      text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
-      -webkit-transition: all 1s ease;
-      -moz-transition: all 1s ease;
-      -o-transition: all 1s ease;
-      transition: all 1s ease;
-      background: $color_links;
+    margin-bottom: 1em;
+    border: 1px solid $color_light_blue;
+    border-radius: 3px;
+    outline: none;
+    transition: 0.4s all ease;
+    &:focus, &:active {
+      border: 1px solid $color_light_blue;
+      border-bottom: 2px solid $color_light_blue;
+    }
+  }
+  .form-submit {
+    @extend .buttons;
+    border: none;
+  }
+  p {
+    color: $color_light_blue;
+    margin-top: 0;
+  }
+  .tips {
+    color: $color_light_blue;
+    list-style: disc;
+    padding-left: 1.5em;
+    font-size: 12px;
+    li {
+      margin-bottom: 0.5em;
+    }
+  }
+  .filter-help {
+    a {
+      color: $color_light_blue;
+      font-size: 12px;
     }
   }
 }
 
+.form-type-checkbox {
+  @include flex(row);
+  align-items: center;
+}
 
+[class*="field-are-you-a-speaker"] {
+  margin-top: 2em;
+  input, label {
+    margin: 0;
+  }
+  input {
+    margin-right: 0.6em;
+  }
+}
 
+textarea {
+  width: 100%;
+  margin-bottom: 0 !important;
+}
+.text-format-wrapper {
+  .filter-wrapper {
+    width: 100%;
+  }
+}
+
+.formtip {
+  background: $color_light_blue;
+}

@@ -53,21 +53,27 @@
     margin-top: 0;
 }
 
+.buttons {
+    margin-top: 2em;
+    @include left-right-gradient;
+    display: inline-block;
+    font-size: 11px;
+    cursor: pointer;
+    font-family: $raleway-bold;
+    text-transform: uppercase;
+    @include buttons-box-shadow;
+    padding: 7px 25px;
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.3s all ease;
+    &:hover {
+        box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.3);
+    }
+}
+
 .more-link {
     a {
-        padding: 7px 24px;
-        @include left-right-gradient;
-        text-transform: uppercase;
-        color: $white;
-        border-radius: 5px;
-        @include buttons-box-shadow;
-        font-size: 11px;
-        cursor: pointer;
-        font-family: $raleway-bold;
-        transition: 0.3s all ease;
-        &:hover {
-            box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.3);
-        }
+        @extend .buttons;
     }
 }
 
