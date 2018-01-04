@@ -597,6 +597,84 @@ ul.menu a {
   margin-left: 2em;
   margin-right: 2em; }
 
+.block-page-title-block {
+  padding: 3em 4em 0; }
+
+.view-sessions-list {
+  padding: 0 4em 3em; }
+
+.view-sessions-list .view-header {
+  font-size: 15px;
+  line-height: 1.5;
+  color: #999;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid #e6e6e6; }
+
+.view-sessions-list .view-header p {
+  max-width: 700px; }
+
+.view-sessions-list .item-list h3 {
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-family: "Rockwell-bold"; }
+
+.view-sessions-list .item-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.view-sessions-list .item-list li {
+  margin: 0;
+  -ms-flex-preferred-size: 33%;
+  flex-basis: 33%;
+  padding: 1em;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 5px; }
+
+.view-sessions-list .wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.view-sessions-list .wrapper .left-content {
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%;
+  margin-right: 1em;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.view-sessions-list .wrapper .right-content {
+  -ms-flex-preferred-size: 75%;
+  flex-basis: 75%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.view-sessions-list .wrapper .right-content a {
+  color: #999;
+  font-size: 15px;
+  font-family: "Raleway-Medium"; }
+
+.view-sessions-list .wrapper .bottom-content {
+  padding-top: 4px;
+  border-top: 1px solid #63c6e5; }
+
+.view-sessions-list .wrapper .bottom-content a {
+  font-size: 14px;
+  font-family: "Raleway-Regular"; }
+
 .region-header {
   display: -ms-flexbox;
   display: flex;
@@ -759,6 +837,9 @@ form input:focus, form input:active, form textarea:focus, form textarea:active {
   border-bottom: 2px solid #63c6e5; }
 
 form .form-submit {
+  border: none; }
+
+form .form-submit:hover, form .form-submit:focus {
   border: none; }
 
 form p {
