@@ -16,14 +16,16 @@ a {
   margin-top: 0; }
 
 .more-link a {
-  padding: 7px 20px;
+  padding: 7px 24px;
   background-image: linear-gradient(to right, #6DE5EC 0%, #00aeee 100%);
   text-transform: uppercase;
   color: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 0px 5px 24px 0px rgba(0, 0, 0, 0.2);
   font-size: 11px;
   cursor: pointer;
   font-family: "Raleway-Bold";
-  transition: 0.5s all ease; }
+  transition: 0.3s all ease; }
 
 .more-link a:hover {
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3); }
@@ -175,7 +177,9 @@ a {
   text-indent: -9999px;
   margin-bottom: 15px;
   display: block;
-  background-size: cover; }
+  background-size: cover;
+  transition: 0.3s all ease;
+  opacity: 1; }
 
 .top-container .column-3 a:hover, .top-container .column-3 a:focus, .top-container .column-3 a:active {
   opacity: 0.7; }
@@ -393,24 +397,21 @@ a {
   position: relative;
   -ms-flex-pack: center;
   justify-content: center;
-  background: #FFFFFF;
-  position: relative;
-  z-index: 1; }
+  position: relative; }
 
 [class*="views-blockspronsors"] .view-content ul:after {
   content: "";
-  width: 90%;
+  background: url("../images/separator.svg") no-repeat scroll left bottom transparent;
+  background-size: 100%;
+  width: 100%;
   height: 10px;
   position: absolute;
   bottom: 0;
-  left: 5%;
-  z-index: 0;
-  background: transparent;
-  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.5);
-  border-radius: 100%; }
+  left: 0;
+  opacity: 0.2; }
 
 [class*="views-blockspronsors"] .view-content .item-list:last-child ul:after {
-  border-bottom: none; }
+  background: none; }
 
 [class*="views-blockspronsors"] .view-content li {
   margin-bottom: 2em;
@@ -458,9 +459,18 @@ a {
   margin-top: 2em;
   background-image: linear-gradient(to right, #6DE5EC 0%, #00aeee 100%);
   display: inline-block;
-  padding: 0.5em 1.3em;
+  font-size: 11px;
+  cursor: pointer;
+  font-family: "Raleway-Bold";
+  text-transform: uppercase;
+  box-shadow: 0px 5px 24px 0px rgba(0, 0, 0, 0.2);
+  padding: 7px 25px;
   color: #fff;
-  border-radius: 5px; }
+  border-radius: 5px;
+  transition: 0.3s all ease; }
+
+.become-sponsors .become-sponsors-content a:hover {
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3); }
 
 ul.menu {
   list-style: none;
