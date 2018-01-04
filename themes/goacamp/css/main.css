@@ -10,24 +10,26 @@ a {
   text-decoration: none;
   color: #207DCC; }
 
-.heading, .region-content .block-region-content .block-block-content:first-child h2, [class*="blocknews-and-updates"] h2, [class*="views-blocksession-tracks"] h2, [class*="views-blockspronsors"] h2, .become-sponsors .become-sponsors-content h3 {
+.heading, .region-content .block-region-content .block-block-content:first-child h2, [class*="blocknews-and-updates"] h2, [class*="views-blocksession-tracks"] h2, [class*="views-blockspronsors"] h2, .become-sponsors .become-sponsors-content h3, .page-title {
   font-family: "Rockwell-regular";
   font-size: 34px;
   margin-top: 0; }
 
-.more-link a {
-  padding: 7px 24px;
+.buttons, .more-link a, form .form-submit {
+  margin-top: 2em;
   background-image: linear-gradient(to right, #6DE5EC 0%, #00aeee 100%);
-  text-transform: uppercase;
-  color: #FFFFFF;
-  border-radius: 5px;
-  box-shadow: 0px 5px 24px 0px rgba(0, 0, 0, 0.2);
+  display: inline-block;
   font-size: 11px;
   cursor: pointer;
   font-family: "Raleway-Bold";
+  text-transform: uppercase;
+  box-shadow: 0px 5px 24px 0px rgba(0, 0, 0, 0.2);
+  padding: 7px 25px;
+  color: #fff;
+  border-radius: 5px;
   transition: 0.3s all ease; }
 
-.more-link a:hover {
+.buttons:hover, .more-link a:hover, form .form-submit:hover {
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3); }
 
 .hvr-sweep-to-right, .region-content .block-region-content .block-block-content:first-child .field--name-body a, [class*="views-blocksession-tracks"] .view-footer a {
@@ -106,6 +108,40 @@ a {
   src: url("../fonts/rockwell-bold.otf") format("opentype"), url("../fonts/rockwell-bold.woff") format("woff"), url("../fonts/rockwell-bold.svg#Raleway-Thin") format("svg");
   font-weight: normal;
   font-style: normal; }
+
+ul.tabs {
+  list-style: none;
+  padding: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border-bottom: 1px solid #63c6e5; }
+
+ul.tabs li {
+  padding: 7px 14px;
+  border: 1px solid #63c6e5;
+  border-bottom: none;
+  border-radius: 7px;
+  margin-right: 5px;
+  border-bottom-left-radius: 0;
+  background: #63c6e5;
+  border-bottom-right-radius: 0; }
+
+ul.tabs li a {
+  color: #FFFFFF;
+  font-family: "Raleway-Medium";
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px; }
+
+ul.tabs li.is-active {
+  background: #FFFFFF;
+  position: relative;
+  top: 1px; }
+
+ul.tabs li.is-active a {
+  color: #63c6e5; }
 
 .top-container {
   -ms-flex-align: center;
@@ -269,7 +305,8 @@ a {
   max-width: 600px; }
 
 [class*="blocknews-and-updates"] .views-field-body p {
-  color: #999; }
+  color: #999;
+  margin-bottom: 2em; }
 
 [class*="views-blocksession-tracks"] {
   padding: 4em;
@@ -553,6 +590,13 @@ ul.menu a {
 .menu--main .menu-item--expanded:hover > a:after, .menu--main .menu-item--expanded:focus > a:after {
   opacity: 1; }
 
+.page-title {
+  color: #63c6e5; }
+
+.messages {
+  margin-left: 2em;
+  margin-right: 2em; }
+
 .region-header {
   display: -ms-flexbox;
   display: flex;
@@ -588,6 +632,12 @@ ul.menu a {
   -ms-flex-direction: column;
   flex-direction: column; }
 
+.path-user .region-content {
+  padding: 4em; }
+
+.region-content .page-title {
+  margin-top: 0; }
+
 .block-system-branding-block {
   display: -ms-flexbox;
   display: flex;
@@ -604,6 +654,20 @@ ul.menu a {
 
 ul li {
   margin-right: 1.4em; }
+
+body:not(.user-logged-in) .menu--account .menu-item a {
+  text-transform: uppercase;
+  background: #207DCC;
+  padding: 7px 27px;
+  font-size: 13px;
+  border-radius: 30px;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+  box-shadow: none;
+  transition: 0.5s all ease; }
+
+body:not(.user-logged-in) .menu--account .menu-item a:hover {
+  box-shadow: 0px 3px 3px 3px rgba(255, 255, 255, 0.6); }
 
 .site-footer {
   background: url("../images/footer_bg.png") no-repeat scroll 0 0;
@@ -666,43 +730,79 @@ and open the template in the editor.
     Author     : yogendra
 */
 form {
-  margin: 10px 0 10px 0; }
+  margin: 2em 0; }
 
 form .form-item {
-  margin: 10px 0 10px 0;
   width: 100%; }
 
 form label {
-  font-weight: bold;
-  width: 10%;
-  float: left;
-  margin-top: 10px;
-  color: #207DCC; }
-
-form input {
-  display: block;
-  height: 25px;
-  padding: 6px 12px;
+  font-family: "Raleway-Bold";
+  color: #63c6e5;
   font-size: 14px;
-  line-height: 1.42857143;
-  color: #555;
-  background-color: #fff;
-  background-image: none;
-  border: 1px solid #ccc; }
+  margin-bottom: 0.5em;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center; }
 
-form input.form-submit {
-  color: #fff;
-  height: auto;
+form input, form textarea {
+  padding: 8px 12px;
   font-size: 14px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  overflow: hidden;
-  letter-spacing: .08em;
-  border-radius: 0;
-  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
-  transition: all 1s ease;
-  background: #207DCC; }
+  margin-bottom: 1em;
+  border: 1px solid #63c6e5;
+  border-radius: 3px;
+  outline: none;
+  transition: 0.4s all ease; }
+
+form input:focus, form input:active, form textarea:focus, form textarea:active {
+  border: 1px solid #63c6e5;
+  border-bottom: 2px solid #63c6e5; }
+
+form .form-submit {
+  border: none; }
+
+form p {
+  color: #63c6e5;
+  margin-top: 0; }
+
+form .tips {
+  color: #63c6e5;
+  list-style: disc;
+  padding-left: 1.5em;
+  font-size: 12px; }
+
+form .tips li {
+  margin-bottom: 0.5em; }
+
+form .filter-help a {
+  color: #63c6e5;
+  font-size: 12px; }
+
+.form-type-checkbox {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-align: center;
+  align-items: center; }
+
+[class*="field-are-you-a-speaker"] {
+  margin-top: 2em; }
+
+[class*="field-are-you-a-speaker"] input, [class*="field-are-you-a-speaker"] label {
+  margin: 0; }
+
+[class*="field-are-you-a-speaker"] input {
+  margin-right: 0.6em; }
+
+textarea {
+  width: 100%;
+  margin-bottom: 0 !important; }
+
+.text-format-wrapper .filter-wrapper {
+  width: 100%; }
+
+.formtip {
+  background: #63c6e5; }
 
 /*# sourceMappingURL=main.css.map */
