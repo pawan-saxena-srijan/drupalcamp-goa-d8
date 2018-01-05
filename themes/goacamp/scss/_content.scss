@@ -7,7 +7,7 @@
     margin-right: 2em;
 }
 .block-page-title-block {
-    padding: 3em 4em 0;
+    // padding: 3em 4em 0;
 }
 .view-sessions-list {
     padding: 0 4em 3em;
@@ -26,25 +26,42 @@
         h3 {
             text-align: center;
             font-size: 24px;
+            color: $color_links;
             letter-spacing: 1px;
             font-family: $rockwell-bold;
+            margin-top: 2em;
+        }
+        &:first-child {
+            h3 {
+                margin-top: 0;
+            }
         }
         ul {
             list-style: none;
             margin: 0;
             padding: 0;
             @include flex(row);
+            flex-wrap: wrap;
         }
         li {
-            margin: 0;
-            flex-basis: 33%;
+            margin: 0 0 0.9em 0;
+            flex-basis: 29.6%;
             padding: 1em;
             box-shadow: 0 0 10px 1px rgba(0,0,0,0.3);
             border-radius: 5px;
+            &:nth-child(3n+2) {
+                margin-left: 1%;
+                margin-right: 1%;
+            }
+        }
+        .views-field-nothing {
+            @include flex(row);
+            height: 100%;
         }
     }
     .wrapper {
         @include flex(row);
+        flex-basis: 100%;
         .left-content {
             flex-basis: 25%;
             margin-right: 1em;
@@ -59,6 +76,9 @@
                 color: $color_grey;
                 font-size: 15px;
                 font-family: $raleway-medium;
+                &:hover {
+                    color: darken($color_grey, 10%);
+                }
             }
         }
         .bottom-content {
