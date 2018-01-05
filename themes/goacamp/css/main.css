@@ -603,11 +603,43 @@ ul.menu a {
 
 .path-node .block-system-main-block,
 .path-webform .block-system-main-block {
-  padding: 3em 4em; }
+  padding: 0 4em 3em; }
 
 .path-node .tabs,
 .path-webform .tabs {
   margin: 0 2em; }
+
+.webform-submission-sponsor-webform-form p,
+.webform-submission-volunteer-form p {
+  color: #999; }
+
+#edit-sponsorship-registration,
+#edit-volunteer {
+  width: 40%; }
+
+#edit-sponsorship-registration input[type="text"],
+#edit-sponsorship-registration input[type="tel"],
+#edit-sponsorship-registration input[type="email"],
+#edit-sponsorship-registration .select2-container,
+#edit-sponsorship-registration .intl-tel-input,
+#edit-volunteer input[type="text"],
+#edit-volunteer input[type="tel"],
+#edit-volunteer input[type="email"],
+#edit-volunteer .select2-container,
+#edit-volunteer .intl-tel-input {
+  width: 100%;
+  box-sizing: border-box; }
+
+#edit-sponsorship-registration label,
+#edit-volunteer label {
+  display: -ms-flexbox;
+  display: flex; }
+
+#edit-sponsorship-registration .select2-container,
+#edit-sponsorship-registration .intl-tel-input,
+#edit-volunteer .select2-container,
+#edit-volunteer .intl-tel-input {
+  margin-bottom: 1em; }
 
 .view-sessions-list {
   padding: 0 4em 3em; }

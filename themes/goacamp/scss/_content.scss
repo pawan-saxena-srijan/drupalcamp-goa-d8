@@ -18,10 +18,37 @@
 .path-node,
 .path-webform {
     .block-system-main-block {
-        padding: 3em 4em;
+        padding: 0 4em 3em;
     }
     .tabs {
         margin: 0 2em;
+    }
+}
+
+.webform-submission-sponsor-webform-form,
+.webform-submission-volunteer-form {
+    p {
+        color: $color_grey;
+    }
+}
+
+#edit-sponsorship-registration,
+#edit-volunteer {
+    width: 40%;
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    .select2-container,
+    .intl-tel-input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    label {
+        display: flex;
+    }
+    .select2-container,
+    .intl-tel-input {
+        margin-bottom: 1em;
     }
 }
 
