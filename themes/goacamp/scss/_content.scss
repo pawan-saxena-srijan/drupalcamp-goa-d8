@@ -6,9 +6,25 @@
     margin-left: 2em;
     margin-right: 2em;
 }
-.block-page-title-block {
-    // padding: 3em 4em 0;
+.path-sessions-list,
+.page-node-type-session,
+.path-node,
+.path-webform {
+    .block-page-title-block {
+        padding: 3em 4em 0;
+    }
 }
+
+.path-node,
+.path-webform {
+    .block-system-main-block {
+        padding: 3em 4em;
+    }
+    .tabs {
+        margin: 0 2em;
+    }
+}
+
 .view-sessions-list {
     padding: 0 4em 3em;
     .view-header {
