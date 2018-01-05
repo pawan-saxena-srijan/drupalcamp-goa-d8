@@ -414,10 +414,8 @@ ul.tabs li.is-active a {
 
 [class*="views-blockspronsors"] .view-content h3 {
   text-align: center;
-  margin-bottom: 2em; }
-
-[class*="views-blockspronsors"] .view-content h3 a {
-  border-bottom: 1px solid #207DCC;
+  margin-bottom: 2em;
+  color: #207DCC;
   font-family: "Raleway-Bold"; }
 
 [class*="views-blockspronsors"] .view-content img {
@@ -596,6 +594,20 @@ ul.menu a {
 .messages {
   margin-left: 2em;
   margin-right: 2em; }
+
+.path-sessions-list .block-page-title-block,
+.page-node-type-session .block-page-title-block,
+.path-node .block-page-title-block,
+.path-webform .block-page-title-block {
+  padding: 3em 4em 0; }
+
+.path-node .block-system-main-block,
+.path-webform .block-system-main-block {
+  padding: 3em 4em; }
+
+.path-node .tabs,
+.path-webform .tabs {
+  margin: 0 2em; }
 
 .view-sessions-list {
   padding: 0 4em 3em; }
