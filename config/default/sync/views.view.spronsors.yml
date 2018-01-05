@@ -236,7 +236,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: Spronsors
+      title: Sponsors
       header: {  }
       footer: {  }
       empty: {  }
