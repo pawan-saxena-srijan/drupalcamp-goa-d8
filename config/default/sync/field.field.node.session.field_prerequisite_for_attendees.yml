@@ -11,7 +11,7 @@ id: node.session.field_prerequisite_for_attendees
 field_name: field_prerequisite_for_attendees
 entity_type: node
 bundle: session
-label: 'prerequisite for attendees'
+label: 'Prerequisite for attendees'
 description: ''
 required: true
 translatable: false
