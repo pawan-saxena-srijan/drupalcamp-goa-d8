@@ -16,3 +16,4 @@ permissions:
   - 'view conditional fields'
   - 'view field_sponsorship_category'
   - 'view field_video'
+  - 'view revision field'

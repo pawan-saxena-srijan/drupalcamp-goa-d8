@@ -10,6 +10,7 @@ dependencies:
     - image.style.thumbnail
     - node.type.session
     - system.menu.account
+    - user.role.authenticated
   module:
     - image
     - node
@@ -30,9 +31,10 @@ display:
     position: 0
     display_options:
       access:
-        type: perm
+        type: role
         options:
-          perm: 'access content'
+          role:
+            authenticated: authenticated
       cache:
         type: tag
         options: {  }
@@ -529,7 +531,7 @@ display:
         - 'languages:language_interface'
         - url
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_tracks'
         - 'config:field.storage.user.field_first_name'
@@ -543,6 +545,11 @@ display:
     display_options:
       display_extenders: {  }
       path: sessions-list
+      access:
+        type: none
+        options: {  }
+      defaults:
+        access: false
     cache_metadata:
       max-age: -1
       contexts:
@@ -550,7 +557,6 @@ display:
         - 'languages:language_interface'
         - url
         - 'user.node_grants:view'
-        - user.permissions
       tags:
         - 'config:field.storage.node.field_tracks'
         - 'config:field.storage.user.field_first_name'
@@ -633,7 +639,7 @@ display:
         - url
         - user
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags:
         - 'config:field.storage.node.field_tracks'
         - 'config:field.storage.user.field_first_name'

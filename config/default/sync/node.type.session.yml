@@ -3,11 +3,15 @@ langcode: en
 status: true
 dependencies:
   module:
+    - hide_revision_field
     - menu_ui
 third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
+  hide_revision_field:
+    hide: true
+    personalizable: false
 name: Session
 type: session
 description: 'Will have the details about Drupal Camp Sessions.'

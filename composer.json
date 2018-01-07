@@ -29,7 +29,8 @@
         "drupal/webform":"^5.0-rc1",
         "drupal/formtips":"^1.0",
 	"drupal/anonymous_login":"^1.0",
-	"drupal/field_permissions":"^1.0-beta4"
+	"drupal/field_permissions":"^1.0-beta4",
+	"drupal/hide_revision_field":"^1.1"
 
     },
     "replace": {
