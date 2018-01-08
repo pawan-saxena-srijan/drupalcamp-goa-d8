@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.session.body
     - field.field.node.session.field_benefactions
+    - field.field.node.session.field_drupal_version
     - field.field.node.session.field_experience_level
     - field.field.node.session.field_prerequisite_for_attendees
     - field.field.node.session.field_room
@@ -16,8 +17,137 @@ dependencies:
     - node.type.session
   module:
     - datetime
+    - options
+    - panelizer
     - text
     - user
+third_party_settings:
+  panelizer:
+    enable: true
+    custom: false
+    allow: false
+    default: default
+    displays:
+      default:
+        blocks:
+          1e702e6a-d707-480b-b469-3df34f467960:
+            id: 'entity_field:node:body'
+            label: 'Session Details/Overview'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: text_summary_or_trimmed
+              settings:
+                trim_length: 600
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            region: first
+            weight: -2
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: 1e702e6a-d707-480b-b469-3df34f467960
+          3dedf266-c60e-44e5-9b27-4fd05bf7760a:
+            id: 'entity_field:node:field_benefactions'
+            label: 'Key take aways'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: text_default
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            region: first
+            weight: -1
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: 3dedf266-c60e-44e5-9b27-4fd05bf7760a
+          5ba37556-cdc1-4276-930f-dacc4541267d:
+            id: 'entity_field:node:field_experience_level'
+            label: 'Experience Level'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: inline
+              type: entity_reference_label
+              settings:
+                link: true
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            region: second
+            weight: -8
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: 5ba37556-cdc1-4276-930f-dacc4541267d
+          b0617f72-69b9-47c8-ba9c-c1204afd0e0d:
+            id: 'entity_field:node:field_prerequisite_for_attendees'
+            label: 'Prerequisite for attendees'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: text_default
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            region: first
+            weight: 0
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: b0617f72-69b9-47c8-ba9c-c1204afd0e0d
+          02dae072-f26b-4532-be4c-e4121177485c:
+            id: 'entity_field:node:field_speakers'
+            label: Speakers
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: entity_reference_label
+              settings:
+                link: true
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            region: second
+            weight: -7
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: 02dae072-f26b-4532-be4c-e4121177485c
+          4b0fa4c0-2568-4314-be1b-f3fd558364a1:
+            id: 'entity_field:node:field_tracks'
+            label: Track
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: inline
+              type: entity_reference_label
+              settings:
+                link: true
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            region: second
+            weight: -9
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: 4b0fa4c0-2568-4314-be1b-f3fd558364a1
+        id: panels_variant
+        label: Default
+        uuid: aac63ed1-9ece-4391-976a-b920df23eff8
+        weight: 0
+        layout: layout_twocol
+        layout_settings: {  }
+        page_title: null
+        storage_type: panelizer_default
+        storage_id: 'node:session:default:default'
+        builder: ipe
+        pattern: panelizer
+        static_context: {  }
 id: node.session.default
 targetEntityType: node
 bundle: session
@@ -37,6 +167,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
+    region: content
+  field_drupal_version:
+    weight: 11
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
     region: content
   field_experience_level:
     weight: 5

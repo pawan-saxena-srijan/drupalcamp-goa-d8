@@ -1,0 +1,21 @@
+uuid: b8220abb-0374-4fb8-bedd-11803100bf64
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_drupal_version
+    - node.type.session
+  module:
+    - options
+id: node.session.field_drupal_version
+field_name: field_drupal_version
+entity_type: node
+bundle: session
+label: 'Drupal version'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

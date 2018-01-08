@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.session.body
     - field.field.node.session.field_benefactions
+    - field.field.node.session.field_drupal_version
     - field.field.node.session.field_experience_level
     - field.field.node.session.field_prerequisite_for_attendees
     - field.field.node.session.field_room
@@ -25,7 +26,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 8
+    weight: 9
     settings:
       rows: 9
       summary_rows: 3
@@ -34,17 +35,23 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 11
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
   field_benefactions:
-    weight: 9
+    weight: 10
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
+    region: content
+  field_drupal_version:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
     region: content
   field_experience_level:
     weight: 5
@@ -53,7 +60,7 @@ content:
     type: options_select
     region: content
   field_prerequisite_for_attendees:
-    weight: 7
+    weight: 8
     settings:
       rows: 5
       placeholder: ''
@@ -69,7 +76,7 @@ content:
     type: string_textfield
     region: content
   field_selected:
-    weight: 12
+    weight: 13
     settings:
       display_label: true
     third_party_settings: {  }
@@ -112,7 +119,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 10
+    weight: 11
     settings:
       match_operator: CONTAINS
       size: 60
