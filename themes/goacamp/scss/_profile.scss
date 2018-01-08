@@ -1,0 +1,30 @@
+.profile {
+    position: relative;
+    [class*="field--name-"],
+    .form-item {
+        @include flex(row);
+        font-size: 14px;
+        margin: 0 0 1em 0;
+    }
+    .field--name-user-picture {
+        position: absolute;
+        right: 0;
+    }
+    .field__label,
+    .form-item .label {
+        flex-basis: 17%;
+        // text-align: right;
+        font-weight: normal;
+        margin: 0 1em 0 0;
+        color: darken($color_light_blue, 20%);
+        &:after {
+            content: " : ";
+            font-weight: bold;
+        }
+    }
+    .field__item {
+        p {
+            margin: 0;
+        }
+    }
+}
