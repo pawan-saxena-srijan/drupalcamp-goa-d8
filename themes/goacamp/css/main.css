@@ -4,7 +4,11 @@ body {
   font-family: "Raleway-Regular";
   width: 100%;
   height: 100%;
-  font-size: 16px; }
+  font-size: 14px; }
+
+p {
+  font-size: 14px;
+  line-height: 1.6; }
 
 a {
   text-decoration: none;
@@ -592,26 +596,7 @@ ul.menu a {
   color: #63c6e5; }
 
 .messages {
-  margin-left: 2em;
-  margin-right: 2em; }
-
-.path-sessions-list .block-page-title-block,
-.page-node-type-session .block-page-title-block,
-.path-node .block-page-title-block,
-.path-webform .block-page-title-block {
-  padding: 3em 4em 0; }
-
-.path-node .block-system-main-block,
-.path-webform .block-system-main-block {
-  padding: 0 4em 3em; }
-
-.path-node .tabs,
-.path-webform .tabs {
-  margin: 0 2em; }
-
-.webform-submission-sponsor-webform-form p,
-.webform-submission-volunteer-form p {
-  color: #999; }
+  margin: 1em 2em; }
 
 #edit-sponsorship-registration,
 #edit-volunteer {
@@ -640,9 +625,6 @@ ul.menu a {
 #edit-volunteer .select2-container,
 #edit-volunteer .intl-tel-input {
   margin-bottom: 1em; }
-
-.view-sessions-list {
-  padding: 0 4em 3em; }
 
 .view-sessions-list .view-header {
   font-size: 15px;
@@ -696,6 +678,9 @@ ul.menu a {
   flex-direction: row;
   height: 100%; }
 
+.view-sessions-list .item-list .views-field-nothing span {
+  width: 100%; }
+
 .view-sessions-list .wrapper {
   display: -ms-flexbox;
   display: flex;
@@ -739,6 +724,57 @@ ul.menu a {
   font-size: 14px;
   font-family: "Raleway-Regular"; }
 
+.node--type-session .node__content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse; }
+
+.node--type-session .left-side-wrap {
+  -ms-flex-preferred-size: 75%;
+  flex-basis: 75%;
+  padding-right: 1em; }
+
+.node--type-session .left-side-wrap .field__label {
+  font-size: 18px;
+  border-bottom: 2px solid #207DCC; }
+
+.node--type-session .right-side-wrap {
+  -ms-flex-preferred-size: 25%;
+  flex-basis: 25%;
+  border: 1px solid #3e96e1;
+  border-radius: 7px; }
+
+.node--type-session .right-side-wrap .field__label {
+  font-size: 16px;
+  margin-bottom: 0.4em;
+  display: -ms-flexbox;
+  display: flex; }
+
+.node--type-session .right-side-wrap .field__item {
+  font-size: 14px; }
+
+.node--type-session .right-side-wrap .field {
+  padding: 1em; }
+
+.node--type-session .right-side-wrap .field:nth-child(odd) {
+  background: #fafafa;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px; }
+
+.node--type-session .right-side-wrap .field:first-child {
+  border-top: none; }
+
+.node--type-session .field__label {
+  font-family: "Raleway-Bold";
+  display: inline;
+  color: #207DCC; }
+
+.node--type-session ul li {
+  margin-bottom: 0.5em; }
+
 .region-header {
   display: -ms-flexbox;
   display: flex;
@@ -750,6 +786,12 @@ ul.menu a {
   max-width: 1280px;
   width: 100%;
   margin: 0 auto; }
+
+.region-content {
+  padding: 3em 4em 3em; }
+
+.path-frontpage .region-content {
+  padding: 0; }
 
 .header {
   padding: 15px;
@@ -900,7 +942,7 @@ form label {
   -ms-flex-align: center;
   align-items: center; }
 
-form input, form textarea {
+form input, form textarea, form select {
   padding: 8px 12px;
   font-size: 14px;
   margin-bottom: 1em;
@@ -909,7 +951,7 @@ form input, form textarea {
   outline: none;
   transition: 0.4s all ease; }
 
-form input:focus, form input:active, form textarea:focus, form textarea:active {
+form input:focus, form input:active, form textarea:focus, form textarea:active, form select:focus, form select:active {
   border: 1px solid #63c6e5;
   border-bottom: 2px solid #63c6e5; }
 
@@ -919,8 +961,10 @@ form .form-submit {
 form .form-submit:hover, form .form-submit:focus {
   border: none; }
 
+form .filter-wrapper {
+  display: none; }
+
 form p {
-  color: #63c6e5;
   margin-top: 0; }
 
 form .tips {
@@ -935,6 +979,12 @@ form .tips li {
 form .filter-help a {
   color: #63c6e5;
   font-size: 12px; }
+
+#field-speakers-add-more-wrapper {
+  text-align: left; }
+
+#field-speakers-add-more-wrapper .tabledrag-toggle-weight-wrapper {
+  display: none; }
 
 .form-type-checkbox {
   display: -ms-flexbox;
@@ -960,7 +1010,68 @@ textarea {
 .text-format-wrapper .filter-wrapper {
   width: 100%; }
 
+.node-session-edit-form .field--type-text-long,
+.node-session-edit-form .field--type-text-with-summary {
+  margin-bottom: 1em; }
+
 .formtip {
   background: #63c6e5; }
+
+.webform-submission-volunteer-form legend {
+  font-family: "Raleway-Bold";
+  color: #63c6e5;
+  margin-bottom: 0.7em !important; }
+
+.webform-submission-volunteer-form .fieldset-wrapper {
+  border: none; }
+
+.webform-submission-volunteer-form .fieldset-wrapper .form-item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 1em; }
+
+.webform-submission-volunteer-form .fieldset-wrapper .form-item input, .webform-submission-volunteer-form .fieldset-wrapper .form-item label {
+  margin: 0; }
+
+.webform-submission-volunteer-form .fieldset-wrapper .form-item label {
+  color: #666666;
+  font-family: "Raleway-Regular"; }
+
+.webform-submission-volunteer-form .fieldset-wrapper .form-item input {
+  margin-right: 0.5em; }
+
+.profile {
+  position: relative; }
+
+.profile [class*="field--name-"],
+.profile .form-item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  font-size: 14px;
+  margin: 0 0 1em 0; }
+
+.profile .field--name-user-picture {
+  position: absolute;
+  right: 0; }
+
+.profile .field__label,
+.profile .form-item .label {
+  -ms-flex-preferred-size: 17%;
+  flex-basis: 17%;
+  font-weight: normal;
+  margin: 0 1em 0 0;
+  color: #209bc2; }
+
+.profile .field__label:after,
+.profile .form-item .label:after {
+  content: " : ";
+  font-weight: bold; }
+
+.profile .field__item p {
+  margin: 0; }
 
 /*# sourceMappingURL=main.css.map */

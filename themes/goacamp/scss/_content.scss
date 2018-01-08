@@ -3,32 +3,24 @@
     color: $color_light_blue;
 }
 .messages {
-    margin-left: 2em;
-    margin-right: 2em;
+    margin: 1em 2em;
 }
 .path-sessions-list,
 .page-node-type-session,
 .path-node,
 .path-webform {
     .block-page-title-block {
-        padding: 3em 4em 0;
+        // padding: 3em 4em 0;
     }
 }
 
 .path-node,
 .path-webform {
     .block-system-main-block {
-        padding: 0 4em 3em;
+        // padding: 0 4em 3em;
     }
     .tabs {
-        margin: 0 2em;
-    }
-}
-
-.webform-submission-sponsor-webform-form,
-.webform-submission-volunteer-form {
-    p {
-        color: $color_grey;
+        // margin: 0 2em;
     }
 }
 
@@ -53,7 +45,7 @@
 }
 
 .view-sessions-list {
-    padding: 0 4em 3em;
+    // padding: 0 4em 3em;
     .view-header {
         font-size: 15px;
         line-height: 1.5;
@@ -100,6 +92,9 @@
         .views-field-nothing {
             @include flex(row);
             height: 100%;
+            span {
+                width: 100%;
+            }
         }
     }
     .wrapper {
@@ -132,5 +127,53 @@
                 font-family: $raleway-regular;
             }
         }
+    }
+}
+
+.node--type-session {
+    .node__content {
+        @include flex(row-reverse);
+    }
+    .left-side-wrap {
+        flex-basis: 75%;
+        padding-right: 1em;
+        .field__label {
+            font-size: 18px;
+            border-bottom: 2px solid $color_links;
+        }
+    }
+    .right-side-wrap {
+        flex-basis: 25%;
+        border: 1px solid lighten($color_links, 10%);
+        border-radius: 7px;
+        .field__label {
+            font-size: 16px;
+            margin-bottom: 0.4em;
+            display: flex;
+        }
+        .field__item {
+            font-size: 14px;
+        }
+        .field {
+            padding: 1em;
+            &:nth-child(odd) {
+                background: lighten($color_grey, 38%);
+                border-top: 1px solid lighten($color_grey, 34%);
+                border-bottom: 1px solid lighten($color_grey, 34%);
+                border-top-left-radius: 7px;
+                border-top-right-radius: 7px;
+            }
+            &:first-child() {
+                border-top: none;
+            }
+        }
+    }
+    .field__label {
+        font-family: $raleway-bold;
+        display: inline;
+        color: $color_links;
+    }
+    ul li {
+        margin-bottom: 0.5em;
     }
 }

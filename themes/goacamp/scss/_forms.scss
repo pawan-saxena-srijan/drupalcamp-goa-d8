@@ -24,7 +24,7 @@ form {
     align-items: center;
   }
 
-  input, textarea {
+  input, textarea, select {
     padding: 8px 12px;
     font-size: 14px;
     margin-bottom: 1em;
@@ -44,8 +44,10 @@ form {
       border: none;
     }
   }
+  .filter-wrapper {
+    display: none;
+  }
   p {
-    color: $color_light_blue;
     margin-top: 0;
   }
   .tips {
@@ -62,6 +64,13 @@ form {
       color: $color_light_blue;
       font-size: 12px;
     }
+  }
+}
+
+#field-speakers-add-more-wrapper {
+  text-align: left;
+  .tabledrag-toggle-weight-wrapper {
+    display: none;
   }
 }
 
@@ -90,6 +99,39 @@ textarea {
   }
 }
 
+.node-session-edit-form {
+  .field--type-text-long,
+  .field--type-text-with-summary {
+    margin-bottom: 1em;
+  }
+}
+
 .formtip {
   background: $color_light_blue;
+}
+
+.webform-submission-volunteer-form {
+  legend {
+    font-family: $raleway-bold;
+    color: $color_light_blue;
+    margin-bottom: 0.7em !important;
+  }
+  .fieldset-wrapper {
+    border: none;
+    .form-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1em;
+      input, label {
+        margin: 0;
+      }
+      label {
+        color: darken($color_grey, 20%);
+        font-family: $raleway-regular;
+      }
+      input {
+        margin-right: 0.5em;
+      }
+    }
+  }
 }
