@@ -14,7 +14,7 @@ a {
   text-decoration: none;
   color: #207DCC; }
 
-.heading, .region-content .block-region-content .block-block-content:first-child h2, [class*="blocknews-and-updates"] h2, [class*="views-blocksession-tracks"] h2, [class*="views-blockspronsors"] h2, .become-sponsors .become-sponsors-content h3, .page-title {
+.heading, .region-content .block-region-content .block-block-content:first-child h2, [class*="blocknews-and-updates"] h2, [class*="views-blocksession-tracks"] h2, [class*="views-blockspronsors"] h2, .become-sponsors .become-sponsors-content h3, .page-title, .node--type-session .field--name-title {
   font-family: "Rockwell-regular";
   font-size: 34px;
   margin-top: 0; }
@@ -730,42 +730,69 @@ ul.menu a {
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse; }
 
-.node--type-session .left-side-wrap {
-  -ms-flex-preferred-size: 75%;
-  flex-basis: 75%;
-  padding-right: 1em; }
+.node--type-session .field--name-title {
+  color: #63c6e5;
+  margin-bottom: 1em;
+  display: -ms-flexbox;
+  display: flex; }
 
-.node--type-session .left-side-wrap .field__label {
+.node--type-session .layout__region--first {
+  -ms-flex-preferred-size: 72%;
+  flex-basis: 72%;
+  padding-right: 2%; }
+
+.node--type-session .layout__region--first .field__label {
   font-size: 18px;
   border-bottom: 2px solid #207DCC; }
 
-.node--type-session .right-side-wrap {
+.node--type-session .layout--twocol {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.node--type-session .layout__region--second {
   -ms-flex-preferred-size: 25%;
   flex-basis: 25%;
   border: 1px solid #3e96e1;
   border-radius: 7px; }
 
-.node--type-session .right-side-wrap .field__label {
+.node--type-session .layout__region--second .field__label {
   font-size: 16px;
-  margin-bottom: 0.4em;
   display: -ms-flexbox;
   display: flex; }
 
-.node--type-session .right-side-wrap .field__item {
+.node--type-session .layout__region--second .field__item {
   font-size: 14px; }
 
-.node--type-session .right-side-wrap .field {
+.node--type-session .layout__region--second .block .field__label {
+  padding: 1em;
+  color: #FFFFFF;
+  background: #207DCC; }
+
+.node--type-session .layout__region--second .block .field__item {
   padding: 1em; }
 
-.node--type-session .right-side-wrap .field:nth-child(odd) {
-  background: #fafafa;
-  border-top: 1px solid #f0f0f0;
-  border-bottom: 1px solid #f0f0f0;
+.node--type-session .layout__region--second .block .field__items {
+  padding: 1em;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+
+.node--type-session .layout__region--second .block .field__items .field__item {
+  padding: 0; }
+
+.node--type-session .layout__region--second .block .field__items .field__item:after {
+  content: ",";
+  margin-right: 0.3em; }
+
+.node--type-session .layout__region--second .block .field__items .field__item:last-child:after {
+  display: none; }
+
+.node--type-session .layout__region--second .block:first-child .field__label {
   border-top-left-radius: 7px;
   border-top-right-radius: 7px; }
-
-.node--type-session .right-side-wrap .field:first-child {
-  border-top: none; }
 
 .node--type-session .field__label {
   font-family: "Raleway-Bold";
@@ -879,9 +906,12 @@ body:not(.user-logged-in) .menu--account .menu-item a:hover {
 .menu--footer > ul.menu > li {
   width: 25%; }
 
-.menu--footer > ul.menu > li > a {
+.menu--footer > ul.menu > li > span {
   margin-bottom: 35px;
   font-size: 18px;
+  color: #FFFFFF;
+  display: -ms-flexbox;
+  display: flex;
   font-family: "Rockwell-regular"; }
 
 .menu--footer > ul.menu > li:last-of-type li {
