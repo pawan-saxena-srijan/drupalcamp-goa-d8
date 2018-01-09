@@ -6,8 +6,46 @@ dependencies:
     - field.field.taxonomy_term.tracks.field_logo
     - taxonomy.vocabulary.tracks
   module:
-    - image
+    - panelizer
     - text
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+    displays:
+      default:
+        blocks:
+          32e1d79a-1d91-4339-900a-d94661f1db15:
+            id: 'entity_field:taxonomy_term:description'
+            label: Description
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: text_default
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            region: content
+            weight: 0
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: 32e1d79a-1d91-4339-900a-d94661f1db15
+        id: panels_variant
+        label: Default
+        uuid: c7acfd9f-cb05-4862-80d8-2a7dfd8c4b6f
+        weight: 0
+        layout: layout_onecol
+        layout_settings: {  }
+        page_title: '[term:name]'
+        storage_type: panelizer_default
+        storage_id: 'taxonomy_term:tracks:default:default'
+        builder: ipe
+        pattern: panelizer
+        static_context: {  }
 id: taxonomy_term.tracks.default
 targetEntityType: taxonomy_term
 bundle: tracks
@@ -20,13 +58,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_logo:
-    weight: 1
-    label: above
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    type: image
-    region: content
-hidden: {  }
+hidden:
+  field_logo: true

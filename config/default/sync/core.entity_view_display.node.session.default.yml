@@ -17,7 +17,6 @@ dependencies:
     - field.field.node.session.field_upload_presentation
     - node.type.session
   module:
-    - datetime
     - file
     - options
     - panelizer
@@ -25,7 +24,7 @@ dependencies:
     - user
 third_party_settings:
   panelizer:
-    enable: false
+    enable: true
     custom: false
     allow: false
     default: default
@@ -175,7 +174,7 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 4
+    weight: 6
     settings:
       trim_length: 600
     third_party_settings: {  }
@@ -188,14 +187,14 @@ content:
     type: text_default
     region: content
   field_drupal_version:
-    weight: 11
+    weight: 4
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_experience_level:
-    weight: 5
+    weight: 2
     label: inline
     settings:
       link: true
@@ -203,41 +202,22 @@ content:
     type: entity_reference_label
     region: content
   field_prerequisite_for_attendees:
-    weight: 9
+    weight: 5
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_room:
-    weight: 2
+    weight: 0
     label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
-  field_selected:
-    weight: 10
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    type: boolean
-    region: content
-  field_session_date:
-    weight: 0
-    label: inline
-    settings:
-      timezone_override: Asia/Kolkata
-      format_type: long
-    third_party_settings: {  }
-    type: datetime_default
-    region: content
   field_speakers:
-    weight: 8
+    weight: 3
     label: above
     settings:
       link: true
@@ -245,7 +225,7 @@ content:
     type: entity_reference_label
     region: content
   field_tracks:
-    weight: 3
+    weight: 1
     label: inline
     settings:
       link: true
@@ -253,12 +233,14 @@ content:
     type: entity_reference_label
     region: content
   field_upload_presentation:
-    weight: 12
+    weight: 8
     label: above
     settings: {  }
     third_party_settings: {  }
     type: file_default
     region: content
 hidden:
+  field_selected: true
+  field_session_date: true
   field_session_ratings: true
   links: true
