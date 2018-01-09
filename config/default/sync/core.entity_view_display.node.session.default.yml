@@ -37,10 +37,9 @@ third_party_settings:
             provider: ctools_block
             label_display: '0'
             formatter:
-              label: hidden
-              type: text_summary_or_trimmed
-              settings:
-                trim_length: 600
+              label: above
+              type: text_default
+              settings: {  }
               third_party_settings: {  }
               weight: 0
               region: content
@@ -154,13 +153,45 @@ third_party_settings:
             uuid: 5dee8f34-120d-4941-9eae-dc3203963d01
             context_mapping:
               entity: '@panelizer.entity_context:entity'
+          6342ef72-d3e1-4272-8903-9cb69db3e0e1:
+            id: 'entity_field:node:field_drupal_version'
+            label: 'Drupal version'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: list_default
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+            region: second
+            weight: 0
+            uuid: 6342ef72-d3e1-4272-8903-9cb69db3e0e1
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+          1ddd8a32-d805-4efc-9f09-819af6957f67:
+            id: 'entity_field:node:field_upload_presentation'
+            label: 'Upload Presentation'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: file_default
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+            region: first
+            weight: 0
+            uuid: 1ddd8a32-d805-4efc-9f09-819af6957f67
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
         id: panels_variant
         label: Default
         uuid: aac63ed1-9ece-4391-976a-b920df23eff8
         weight: 0
         layout: layout_twocol
         layout_settings: {  }
-        page_title: ''
+        page_title: null
         storage_type: panelizer_default
         storage_id: 'node:session:default:default'
         builder: ipe

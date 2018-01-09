@@ -11,7 +11,6 @@ module:
   colorbox_inline: 0
   colorbox_load: 0
   comment: 0
-  conditional_fields: 0
   config: 0
   contact: 0
   contextual: 0

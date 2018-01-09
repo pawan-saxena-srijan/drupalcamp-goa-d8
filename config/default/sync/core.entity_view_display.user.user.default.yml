@@ -3,15 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.user.user.field_are_you_a_speaker
     - field.field.user.user.field_bio
     - field.field.user.user.field_drupal_org_profile
     - field.field.user.user.field_first_name
     - field.field.user.user.field_job_title
     - field.field.user.user.field_last_name
     - field.field.user.user.field_organisation_institution
-    - field.field.user.user.field_past_experience
-    - field.field.user.user.field_tshirt_size
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -84,13 +81,6 @@ content:
     third_party_settings: {  }
     type: entity_reference_label
     region: content
-  field_past_experience:
-    type: text_default
-    weight: 7
-    region: content
-    label: above
-    settings: {  }
-    third_party_settings: {  }
   user_picture:
     type: image
     weight: 0
@@ -101,6 +91,4 @@ content:
     third_party_settings: {  }
     label: hidden
 hidden:
-  field_are_you_a_speaker: true
-  field_tshirt_size: true
   member_for: true

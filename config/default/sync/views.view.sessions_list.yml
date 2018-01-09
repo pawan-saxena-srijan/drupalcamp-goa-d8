@@ -714,7 +714,7 @@ display:
           empty: true
           tokenize: true
           target: '{{ raw_arguments.tid }}'
-          view_mode: full
+          view_mode: default
           bypass_access: false
           plugin_id: entity
         area_text_custom:
