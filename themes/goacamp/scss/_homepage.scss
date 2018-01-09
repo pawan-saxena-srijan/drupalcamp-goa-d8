@@ -77,10 +77,16 @@
         background: url("../images/facebook.svg") no-repeat scroll 0 0 transparent;
     }
     .twitter {
-        background: url("../images/linkedin.svg") no-repeat scroll 0 0 transparent;
+        background: url("../images/twitter.svg") no-repeat scroll 0 0 transparent;
     }
     .linkedin {
-        background: url("../images/twitter.svg") no-repeat scroll 0 0 transparent;
+        background: url("../images/linkedin.svg") no-repeat scroll 0 0 transparent;
+    }
+}
+
+.user-logged-in {
+    .top-register-now {
+        display: none;
     }
 }
 
