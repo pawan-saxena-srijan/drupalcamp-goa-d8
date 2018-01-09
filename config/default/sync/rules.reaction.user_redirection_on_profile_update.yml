@@ -1,0 +1,35 @@
+uuid: e326a63a-e21a-464c-9c4d-3851eb646763
+langcode: en
+status: true
+dependencies: {  }
+id: user_redirection_on_profile_update
+label: 'User Redirection on Profile Update'
+events:
+  -
+    event_name: 'rules_entity_update:user'
+description: ''
+tags:
+  - User
+config_version: '3'
+expression:
+  id: rules_rule
+  uuid: 127936bc-4e0a-4636-a09e-fec2eb1b0bd0
+  conditions:
+    id: rules_and
+    uuid: a9cdde45-75d3-4944-8402-fbe2bf1ad329
+    conditions: {  }
+  actions:
+    id: rules_action_set
+    uuid: cafc2a88-9a37-4714-b4ed-5fa64472eccf
+    actions:
+      -
+        id: rules_action
+        uuid: bf0d17c9-14b1-490f-b24f-6b0706342fd9
+        context_values:
+          url: /home
+        context_mapping: {  }
+        context_processors:
+          url:
+            rules_tokens: {  }
+        provides_mapping: {  }
+        action_id: rules_page_redirect

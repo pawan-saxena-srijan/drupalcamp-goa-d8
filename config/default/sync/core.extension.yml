@@ -48,6 +48,7 @@ module:
   path: 0
   quickedit: 0
   rdf: 0
+  rules: 0
   search: 0
   shortcut: 0
   smtp: 0
@@ -59,6 +60,7 @@ module:
   toolbar: 0
   tour: 0
   twitter_feed: 0
+  typed_data: 0
   update: 0
   user: 0
   views_ui: 0
