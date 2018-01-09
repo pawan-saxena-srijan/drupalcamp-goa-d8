@@ -1,0 +1,31 @@
+uuid: f28b4d31-1b53-40fe-87f9-65962c21bf68
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: content
+label: Content
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  40e0b8ca-4eb9-4c0a-908f-17f847546d11:
+    id: node_type
+    bundles:
+      album: album
+      article: article
+      gallery: gallery
+      news_and_updates: news_and_updates
+      page: page
+      session: session
+      sponsors: sponsors
+      videos: videos
+      webform: webform
+      workshops: workshops
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 40e0b8ca-4eb9-4c0a-908f-17f847546d11
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -18,6 +18,8 @@ third_party_settings:
         hide: false
       22:
         hide: false
+      11:
+        hide: false
 name: Album
 type: album
 description: 'Content type to show images'

@@ -18,6 +18,8 @@ third_party_settings:
         hide: false
       22:
         hide: false
+      11:
+        hide: false
 name: Videos
 type: videos
 description: 'Videos of Camp'

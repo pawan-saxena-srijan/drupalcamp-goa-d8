@@ -14,9 +14,11 @@ dependencies:
     - field.field.node.session.field_session_ratings
     - field.field.node.session.field_speakers
     - field.field.node.session.field_tracks
+    - field.field.node.session.field_upload_presentation
     - node.type.session
   module:
     - datetime
+    - file
     - path
     - text
 id: node.session.default
@@ -102,6 +104,13 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
+  field_upload_presentation:
+    weight: 26
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
     region: content
   path:
     type: path

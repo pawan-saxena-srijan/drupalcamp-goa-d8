@@ -14,9 +14,11 @@ dependencies:
     - field.field.node.session.field_session_ratings
     - field.field.node.session.field_speakers
     - field.field.node.session.field_tracks
+    - field.field.node.session.field_upload_presentation
     - node.type.session
   module:
     - datetime
+    - file
     - options
     - panelizer
     - text
@@ -249,6 +251,13 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
+  field_upload_presentation:
+    weight: 12
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
     region: content
 hidden:
   field_session_ratings: true
