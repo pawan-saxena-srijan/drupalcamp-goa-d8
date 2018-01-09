@@ -95,5 +95,8 @@ content:
     region: content
 hidden:
   contact: true
+  field_are_you_a_speaker: true
+  field_past_experience: true
+  field_tshirt_size: true
   language: true
   timezone: true
