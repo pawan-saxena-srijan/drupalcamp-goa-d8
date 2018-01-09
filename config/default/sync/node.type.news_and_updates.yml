@@ -20,6 +20,10 @@ third_party_settings:
         hide: false
       11:
         hide: false
+      24:
+        hide: false
+      25:
+        hide: false
 name: 'News and Updates'
 type: news_and_updates
 description: 'News and updates for Camp'

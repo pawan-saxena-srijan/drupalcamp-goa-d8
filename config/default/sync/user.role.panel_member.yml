@@ -23,6 +23,7 @@ permissions:
   - 'post comments'
   - 'skip comment approval'
   - 'use text format full_html'
+  - 'use text format restricted_html'
   - 'view field_room'
   - 'view field_selected'
   - 'view field_session_date'

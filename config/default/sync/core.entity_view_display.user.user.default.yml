@@ -17,8 +17,15 @@ dependencies:
   module:
     - image
     - link
+    - panelizer
     - text
     - user
+third_party_settings:
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
 _core:
   default_config_hash: V51QPCKkgNREKtSmB9Iu2wmAMEpktVpnzklWaZV8UYo
 id: user.user.default
@@ -26,25 +33,15 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
-  field_are_you_a_speaker:
-    weight: 13
-    label: above
-    settings:
-      format: default
-      format_custom_false: ''
-      format_custom_true: ''
-    third_party_settings: {  }
-    type: boolean
-    region: content
   field_bio:
-    weight: 12
+    weight: 6
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
   field_drupal_org_profile:
-    weight: 7
+    weight: 1
     label: above
     settings:
       trim_length: 80
@@ -56,7 +53,7 @@ content:
     type: link
     region: content
   field_first_name:
-    weight: 9
+    weight: 3
     label: above
     settings:
       link_to_entity: false
@@ -64,7 +61,7 @@ content:
     type: string
     region: content
   field_job_title:
-    weight: 11
+    weight: 5
     label: above
     settings:
       link_to_entity: false
@@ -72,7 +69,7 @@ content:
     type: string
     region: content
   field_last_name:
-    weight: 10
+    weight: 4
     label: above
     settings:
       link_to_entity: false
@@ -80,31 +77,20 @@ content:
     type: string
     region: content
   field_organisation_institution:
-    weight: 8
+    weight: 2
     label: above
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     type: entity_reference_label
     region: content
   field_past_experience:
-    weight: 15
+    type: text_default
+    weight: 7
+    region: content
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: text_default
-    region: content
-  field_tshirt_size:
-    weight: 14
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  member_for:
-    weight: 5
-    region: content
   user_picture:
     type: image
     weight: 0
@@ -114,4 +100,7 @@ content:
       image_link: content
     third_party_settings: {  }
     label: hidden
-hidden: {  }
+hidden:
+  field_are_you_a_speaker: true
+  field_tshirt_size: true
+  member_for: true

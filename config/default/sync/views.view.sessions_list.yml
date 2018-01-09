@@ -64,7 +64,11 @@ display:
       style:
         type: html_list
         options:
-          grouping: {  }
+          grouping:
+            -
+              field: field_tracks
+              rendered: true
+              rendered_strip: true
           row_class: ''
           default_row_class: true
           type: ul
@@ -649,7 +653,7 @@ display:
     position: 3
     display_options:
       display_extenders: {  }
-      path: taxonomy/term/%
+      path: tracks/%/detail
       arguments:
         tid:
           id: tid
@@ -697,6 +701,8 @@ display:
         header: false
         access: false
         title: false
+        style: false
+        row: false
       header:
         entity_taxonomy_term:
           id: entity_taxonomy_term
@@ -726,6 +732,22 @@ display:
         type: none
         options: {  }
       title: '{{ arguments.tid }}'
+      style:
+        type: html_list
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          type: ul
+          wrapper_class: item-list
+          class: ''
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
     cache_metadata:
       max-age: -1
       contexts:

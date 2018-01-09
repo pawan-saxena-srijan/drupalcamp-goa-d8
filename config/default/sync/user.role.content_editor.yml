@@ -102,6 +102,7 @@ permissions:
   - 'revert workshops revisions'
   - 'skip comment approval'
   - 'use text format full_html'
+  - 'use text format restricted_html'
   - 'view album revisions'
   - 'view all revisions'
   - 'view article revisions'

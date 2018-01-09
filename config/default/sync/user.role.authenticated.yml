@@ -19,6 +19,7 @@ permissions:
   - 'edit own session content'
   - 'search content'
   - 'use text format basic_html'
+  - 'use text format restricted_html'
   - 'view conditional fields'
   - 'view field_sponsorship_category'
   - 'view field_video'
