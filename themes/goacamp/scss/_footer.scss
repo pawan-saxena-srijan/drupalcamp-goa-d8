@@ -31,9 +31,11 @@
   > ul.menu > li {
     width: 25%;
 
-    > a {
+    > span {
       margin-bottom: 35px;
       font-size: 18px;
+      color: $white;
+      display: flex;
       font-family: $rockwell-regular;
     }
 
