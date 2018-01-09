@@ -1,7 +1,20 @@
 uuid: 35cbe1a1-dc06-4f2a-953a-fe3e778aa568
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - hide_revision_field
+third_party_settings:
+  hide_revision_field:
+    personalization:
+      15:
+        hide: false
+      17:
+        hide: false
+      18:
+        hide: false
+      22:
+        hide: false
 _core:
   default_config_hash: KuyA4NHPXcmKAjRtwa0vQc2ZcyrUJy6IlS2TAyMNRbc
 name: 'Basic page'

@@ -23,7 +23,7 @@ dependencies:
     - user
 third_party_settings:
   panelizer:
-    enable: true
+    enable: false
     custom: false
     allow: false
     default: default
@@ -96,7 +96,7 @@ third_party_settings:
               weight: 0
               region: content
             region: first
-            weight: 0
+            weight: -3
             context_mapping:
               entity: '@panelizer.entity_context:entity'
             uuid: b0617f72-69b9-47c8-ba9c-c1204afd0e0d
@@ -159,7 +159,7 @@ third_party_settings:
         weight: 0
         layout: layout_twocol
         layout_settings: {  }
-        page_title: null
+        page_title: ''
         storage_type: panelizer_default
         storage_id: 'node:session:default:default'
         builder: ipe

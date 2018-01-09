@@ -1,7 +1,20 @@
 uuid: 954f2f4b-035b-4405-8061-7a35dda13867
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - hide_revision_field
+third_party_settings:
+  hide_revision_field:
+    personalization:
+      15:
+        hide: false
+      17:
+        hide: false
+      18:
+        hide: false
+      22:
+        hide: false
 _core:
   default_config_hash: AeW1SEDgb1OTQACAWGhzvMknMYAJlcZu0jljfeU3oso
 name: Article
