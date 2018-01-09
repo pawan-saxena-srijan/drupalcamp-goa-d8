@@ -240,10 +240,13 @@ ul.tabs li.is-active a {
   background: url("../images/facebook.svg") no-repeat scroll 0 0 transparent; }
 
 .top-container .twitter {
-  background: url("../images/linkedin.svg") no-repeat scroll 0 0 transparent; }
+  background: url("../images/twitter.svg") no-repeat scroll 0 0 transparent; }
 
 .top-container .linkedin {
-  background: url("../images/twitter.svg") no-repeat scroll 0 0 transparent; }
+  background: url("../images/linkedin.svg") no-repeat scroll 0 0 transparent; }
+
+.user-logged-in .top-register-now {
+  display: none; }
 
 .region-content .block-region-content .block-block-content:first-child {
   position: relative;
