@@ -7,9 +7,9 @@ dependencies:
 id: content
 label: Content
 type: 'canonical_entities:node'
-pattern: '[node:title]'
+pattern: '[node:content-type]/[node:title]'
 selection_criteria:
-  40e0b8ca-4eb9-4c0a-908f-17f847546d11:
+  6af3ddc6-694e-4faf-828b-1b74b9ab7341:
     id: node_type
     bundles:
       album: album
@@ -25,7 +25,7 @@ selection_criteria:
     negate: false
     context_mapping:
       node: node
-    uuid: 40e0b8ca-4eb9-4c0a-908f-17f847546d11
+    uuid: 6af3ddc6-694e-4faf-828b-1b74b9ab7341
 selection_logic: and
 weight: -5
 relationships: {  }
