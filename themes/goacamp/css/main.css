@@ -196,7 +196,7 @@ ul.tabs li.is-active a {
 
 .top-container .column-2 a {
   margin-top: 0.7em;
-  background: url("../images/register_now.svg") no-repeat scroll 0 0 transparent;
+  background: url("../images/register_now.png") no-repeat scroll 0 0 transparent;
   color: transparent;
   font-size: 2.5em;
   width: 140px; }
@@ -606,7 +606,7 @@ ul.menu a {
   margin: 1em 2em; }
 
 #edit-sponsorship-registration,
-#edit-volunteer {
+[id*="edit-volunteer"] {
   width: 40%; }
 
 #edit-sponsorship-registration input[type="text"],
@@ -614,23 +614,23 @@ ul.menu a {
 #edit-sponsorship-registration input[type="email"],
 #edit-sponsorship-registration .select2-container,
 #edit-sponsorship-registration .intl-tel-input,
-#edit-volunteer input[type="text"],
-#edit-volunteer input[type="tel"],
-#edit-volunteer input[type="email"],
-#edit-volunteer .select2-container,
-#edit-volunteer .intl-tel-input {
+[id*="edit-volunteer"] input[type="text"],
+[id*="edit-volunteer"] input[type="tel"],
+[id*="edit-volunteer"] input[type="email"],
+[id*="edit-volunteer"] .select2-container,
+[id*="edit-volunteer"] .intl-tel-input {
   width: 100%;
   box-sizing: border-box; }
 
 #edit-sponsorship-registration label,
-#edit-volunteer label {
+[id*="edit-volunteer"] label {
   display: -ms-flexbox;
   display: flex; }
 
 #edit-sponsorship-registration .select2-container,
 #edit-sponsorship-registration .intl-tel-input,
-#edit-volunteer .select2-container,
-#edit-volunteer .intl-tel-input {
+[id*="edit-volunteer"] .select2-container,
+[id*="edit-volunteer"] .intl-tel-input {
   margin-bottom: 1em; }
 
 .view-sessions-list .view-header {

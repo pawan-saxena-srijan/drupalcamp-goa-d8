@@ -7,7 +7,7 @@
 }
 
 #edit-sponsorship-registration,
-#edit-volunteer {
+[id*="edit-volunteer"] {
     width: 40%;
     input[type="text"],
     input[type="tel"],
