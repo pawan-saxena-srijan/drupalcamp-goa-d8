@@ -88,7 +88,7 @@
             @include flex(column);
             justify-content: space-between;
             a {
-                color: $color_grey;
+                color: $color_links;
                 font-size: 15px;
                 font-family: $raleway-medium;
                 &:hover {
@@ -101,6 +101,7 @@
             border-top: 1px solid $color_light_blue;
             a {
                 font-size: 14px;
+                color: $color_grey;
                 font-family: $raleway-regular;
             }
         }
