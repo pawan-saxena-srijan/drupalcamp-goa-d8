@@ -386,8 +386,8 @@ ul.tabs li.is-active a {
   width: auto; }
 
 .view-session-tracks .view-content .views-row {
-  -ms-flex-preferred-size: 25%;
-  flex-basis: 25%;
+  -ms-flex-preferred-size: 33%;
+  flex-basis: 33%;
   margin-bottom: 2em; }
 
 .view-session-tracks .view-content .views-field-field-logo {
@@ -1140,6 +1140,20 @@ textarea {
 
 .webform-submission-volunteer-form .fieldset-wrapper .form-item input {
   margin-right: 0.5em; }
+
+.user-form {
+  width: 40%; }
+
+.user-form input,
+.user-form select,
+.user-form .form-type-password {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box; }
+
+.user-form input[type="submit"] {
+  max-width: inherit;
+  width: inherit; }
 
 .profile {
   position: relative; }
