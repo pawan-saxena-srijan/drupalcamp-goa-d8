@@ -117,6 +117,18 @@ textarea {
   }
 }
 
+.form-type-checkbox {
+  display: flex;
+  align-items: center;
+  input, label {
+    margin: 0 5px 0 0;
+  }
+  label {
+    font-family: $raleway-regular;
+    color: $color_grey;
+  }
+}
+
 .node-session-edit-form,
 .node-session-form {
   .field--type-text-long,

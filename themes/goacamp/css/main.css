@@ -169,7 +169,7 @@ ul.tabs li.is-active a {
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
   color: #207DCC;
-  font-family: "Raleway-Thin"; }
+  font-family: "Raleway-Bold"; }
 
 .top-container .column-1 span:last-child {
   position: relative; }
@@ -566,7 +566,7 @@ ul.menu a {
   position: absolute;
   padding: 0;
   opacity: 0;
-  margin-top: 0.8em;
+  margin-top: 0.7em;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -605,15 +605,15 @@ ul.menu a {
 .messages {
   margin: 1em 2em; }
 
-#edit-sponsorship-registration,
+[id*="edit-sponsorship-registration"],
 [id*="edit-volunteer"] {
   width: 40%; }
 
-#edit-sponsorship-registration input[type="text"],
-#edit-sponsorship-registration input[type="tel"],
-#edit-sponsorship-registration input[type="email"],
-#edit-sponsorship-registration .select2-container,
-#edit-sponsorship-registration .intl-tel-input,
+[id*="edit-sponsorship-registration"] input[type="text"],
+[id*="edit-sponsorship-registration"] input[type="tel"],
+[id*="edit-sponsorship-registration"] input[type="email"],
+[id*="edit-sponsorship-registration"] .select2-container,
+[id*="edit-sponsorship-registration"] .intl-tel-input,
 [id*="edit-volunteer"] input[type="text"],
 [id*="edit-volunteer"] input[type="tel"],
 [id*="edit-volunteer"] input[type="email"],
@@ -622,13 +622,13 @@ ul.menu a {
   width: 100%;
   box-sizing: border-box; }
 
-#edit-sponsorship-registration label,
+[id*="edit-sponsorship-registration"] label,
 [id*="edit-volunteer"] label {
   display: -ms-flexbox;
   display: flex; }
 
-#edit-sponsorship-registration .select2-container,
-#edit-sponsorship-registration .intl-tel-input,
+[id*="edit-sponsorship-registration"] .select2-container,
+[id*="edit-sponsorship-registration"] .intl-tel-input,
 [id*="edit-volunteer"] .select2-container,
 [id*="edit-volunteer"] .intl-tel-input {
   margin-bottom: 1em; }
@@ -1093,6 +1093,19 @@ textarea {
 
 .text-format-wrapper .filter-wrapper {
   width: 100%; }
+
+.form-type-checkbox {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.form-type-checkbox input, .form-type-checkbox label {
+  margin: 0 5px 0 0; }
+
+.form-type-checkbox label {
+  font-family: "Raleway-Regular";
+  color: #999; }
 
 .node-session-edit-form .field--type-text-long,
 .node-session-edit-form .field--type-text-with-summary,

@@ -39,7 +39,7 @@ ul.menu {
             position: absolute;
             padding: 0;
             opacity: 0;
-            margin-top: 0.8em;
+            margin-top: 0.7em;
             @include flex(column);
             min-width: 200px;
             background: $color_links;
