@@ -167,6 +167,18 @@ textarea {
   }
 }
 
+.contact-message-form {
+  .form-item-mail,
+  .form-item-name {
+    margin-bottom: 1.5em;
+  }
+}
+
+input[value="Preview"] {
+  display: none;
+}
+
+
 .user-form {
   width: 40%;
   input,

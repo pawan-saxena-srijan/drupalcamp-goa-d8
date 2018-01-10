@@ -712,7 +712,7 @@ ul.menu a {
   justify-content: space-between; }
 
 .view-sessions-list .wrapper .right-content a {
-  color: #999;
+  color: #207DCC;
   font-size: 15px;
   font-family: "Raleway-Medium"; }
 
@@ -725,6 +725,7 @@ ul.menu a {
 
 .view-sessions-list .wrapper .bottom-content a {
   font-size: 14px;
+  color: #999;
   font-family: "Raleway-Regular"; }
 
 .vocabulary-tracks .field--name-name {
@@ -1140,6 +1141,13 @@ textarea {
 
 .webform-submission-volunteer-form .fieldset-wrapper .form-item input {
   margin-right: 0.5em; }
+
+.contact-message-form .form-item-mail,
+.contact-message-form .form-item-name {
+  margin-bottom: 1.5em; }
+
+input[value="Preview"] {
+  display: none; }
 
 .user-form {
   width: 40%; }
