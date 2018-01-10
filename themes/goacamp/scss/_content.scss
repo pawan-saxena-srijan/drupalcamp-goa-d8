@@ -90,6 +90,7 @@
             a {
                 color: $color_links;
                 font-size: 15px;
+                font-weight: 600;
                 font-family: $raleway-medium;
                 &:hover {
                     color: darken($color_grey, 10%);
