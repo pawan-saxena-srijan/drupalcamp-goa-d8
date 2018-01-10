@@ -65,9 +65,27 @@ form {
       font-size: 12px;
     }
   }
+  .webform-element-help {
+    color: $white !important;
+    font-size: 12px;
+    background: $color_light_blue;
+    border: none;
+    &:hover {
+      border: none;
+    }
+  }
+  .form-required {
+    &:after {
+      content: "*";
+      color: red;
+      margin-left: 2px;
+      font-size: 16px;
+    }
+  }
 }
 
-#field-speakers-add-more-wrapper {
+#field-speakers-add-more-wrapper,
+#edit-field-speakers-wrapper {
   text-align: left;
   .tabledrag-toggle-weight-wrapper {
     display: none;
@@ -99,7 +117,8 @@ textarea {
   }
 }
 
-.node-session-edit-form {
+.node-session-edit-form,
+.node-session-form {
   .field--type-text-long,
   .field--type-text-with-summary {
     margin-bottom: 1em;

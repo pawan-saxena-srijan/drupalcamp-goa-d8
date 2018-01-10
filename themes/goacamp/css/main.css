@@ -4,10 +4,10 @@ body {
   font-family: "Raleway-Regular";
   width: 100%;
   height: 100%;
-  font-size: 14px; }
+  font-size: 15px; }
 
 p {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.6; }
 
 a {
@@ -19,7 +19,9 @@ a {
   font-size: 34px;
   margin-top: 0; }
 
-.buttons, .more-link a, form .form-submit {
+.buttons, .more-link a, .button--danger,
+input[value="Delete"],
+input[value="Remove"], form .form-submit {
   margin-top: 2em;
   background-image: linear-gradient(to right, #6DE5EC 0%, #00aeee 100%);
   display: inline-block;
@@ -33,7 +35,9 @@ a {
   border-radius: 5px;
   transition: 0.3s all ease; }
 
-.buttons:hover, .more-link a:hover, form .form-submit:hover {
+.buttons:hover, .more-link a:hover, .button--danger:hover,
+input[value="Delete"]:hover,
+input[value="Remove"]:hover, form .form-submit:hover {
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3); }
 
 .hvr-sweep-to-right, .region-content .block-region-content .block-block-content:first-child .field--name-body a, [class*="views-blocksession-tracks"] .view-footer a {
@@ -772,9 +776,12 @@ ul.menu a {
 
 .node--type-session .layout__region--second {
   -ms-flex-preferred-size: 25%;
-  flex-basis: 25%;
-  border: 1px solid #3e96e1;
-  border-radius: 7px; }
+  flex-basis: 25%; }
+
+.node--type-session .layout__region--second .block-region-second {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border: 1px solid #3e96e1; }
 
 .node--type-session .layout__region--second .field__label {
   font-size: 16px;
@@ -867,6 +874,17 @@ ul.menu a {
 
 .region-content .page-title {
   margin-top: 0; }
+
+.button--danger,
+input[value="Delete"],
+input[value="Remove"] {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #FFFFFF;
+  padding: 7px 25px;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+  background-image: none; }
 
 .block-system-branding-block {
   display: -ms-flexbox;
@@ -1029,10 +1047,27 @@ form .filter-help a {
   color: #63c6e5;
   font-size: 12px; }
 
-#field-speakers-add-more-wrapper {
+form .webform-element-help {
+  color: #FFFFFF !important;
+  font-size: 12px;
+  background: #63c6e5;
+  border: none; }
+
+form .webform-element-help:hover {
+  border: none; }
+
+form .form-required:after {
+  content: "*";
+  color: red;
+  margin-left: 2px;
+  font-size: 16px; }
+
+#field-speakers-add-more-wrapper,
+#edit-field-speakers-wrapper {
   text-align: left; }
 
-#field-speakers-add-more-wrapper .tabledrag-toggle-weight-wrapper {
+#field-speakers-add-more-wrapper .tabledrag-toggle-weight-wrapper,
+#edit-field-speakers-wrapper .tabledrag-toggle-weight-wrapper {
   display: none; }
 
 .form-type-checkbox {
@@ -1060,7 +1095,9 @@ textarea {
   width: 100%; }
 
 .node-session-edit-form .field--type-text-long,
-.node-session-edit-form .field--type-text-with-summary {
+.node-session-edit-form .field--type-text-with-summary,
+.node-session-form .field--type-text-long,
+.node-session-form .field--type-text-with-summary {
   margin-bottom: 1em; }
 
 .formtip {
