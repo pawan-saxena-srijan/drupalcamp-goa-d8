@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.session.body
     - field.field.node.session.field_benefactions
+    - field.field.node.session.field_by_submitting_this_session
     - field.field.node.session.field_drupal_version
     - field.field.node.session.field_experience_level
     - field.field.node.session.field_prerequisite_for_attendees
@@ -216,6 +217,16 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
+    region: content
+  field_by_submitting_this_session:
+    weight: 9
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
     region: content
   field_drupal_version:
     weight: 4
