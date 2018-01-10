@@ -74,7 +74,7 @@ third_party_settings:
               label: inline
               type: entity_reference_label
               settings:
-                link: true
+                link: false
               third_party_settings: {  }
               weight: 0
               region: content
@@ -127,7 +127,7 @@ third_party_settings:
               label: inline
               type: entity_reference_label
               settings:
-                link: true
+                link: false
               third_party_settings: {  }
               weight: 0
               region: content

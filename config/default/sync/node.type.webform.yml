@@ -7,6 +7,7 @@ dependencies:
       - webform_node
   module:
     - hide_revision_field
+    - menu_ui
 third_party_settings:
   hide_revision_field:
     personalization:
@@ -24,6 +25,12 @@ third_party_settings:
         hide: false
       25:
         hide: false
+    hide: false
+    personalizable: true
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
 _core:
   default_config_hash: BuY_3PjmYtRTSuvyFORJZUe0-TQiNXEE6yYQ_dkjxW8
 name: Webform
@@ -32,4 +39,4 @@ description: 'A basic page with a webform attached.'
 help: ''
 new_revision: false
 preview_mode: 1
-display_submitted: true
+display_submitted: false
