@@ -6,7 +6,7 @@
     margin: 1em 2em;
 }
 
-#edit-sponsorship-registration,
+[id*="edit-sponsorship-registration"],
 [id*="edit-volunteer"] {
     width: 40%;
     input[type="text"],
