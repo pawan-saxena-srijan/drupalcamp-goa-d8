@@ -166,3 +166,18 @@ textarea {
     }
   }
 }
+
+.user-form {
+  width: 40%;
+  input,
+  select,
+  .form-type-password {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    max-width: inherit;
+    width: inherit;
+  }
+}
