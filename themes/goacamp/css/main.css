@@ -714,6 +714,7 @@ ul.menu a {
 .view-sessions-list .wrapper .right-content a {
   color: #207DCC;
   font-size: 15px;
+  font-weight: 600;
   font-family: "Raleway-Medium"; }
 
 .view-sessions-list .wrapper .right-content a:hover {
