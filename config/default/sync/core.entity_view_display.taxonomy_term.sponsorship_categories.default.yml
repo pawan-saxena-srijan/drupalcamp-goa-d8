@@ -1,0 +1,21 @@
+uuid: 9fbca0f7-2955-4fb9-96a7-4019d50beab2
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.sponsorship_categories
+  module:
+    - text
+id: taxonomy_term.sponsorship_categories.default
+targetEntityType: taxonomy_term
+bundle: sponsorship_categories
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

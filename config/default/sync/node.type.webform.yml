@@ -25,6 +25,10 @@ third_party_settings:
         hide: false
       25:
         hide: false
+      1:
+        hide: false
+      55:
+        hide: false
     hide: false
     personalizable: true
   menu_ui:

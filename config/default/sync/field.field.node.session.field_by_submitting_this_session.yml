@@ -9,7 +9,7 @@ id: node.session.field_by_submitting_this_session
 field_name: field_by_submitting_this_session
 entity_type: node
 bundle: session
-label: 'By submitting this session I acknowledge that I have read and agree to the terms outlined in the Speaker Agreement document'
+label: 'I acknowledge that I have read & agree to the terms outlined in the &nbsp;<a href="/agreement">Speaker Agreement</a> '
 description: ''
 required: true
 translatable: false

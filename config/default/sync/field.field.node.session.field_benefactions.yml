@@ -11,7 +11,7 @@ id: node.session.field_benefactions
 field_name: field_benefactions
 entity_type: node
 bundle: session
-label: 'Key take aways'
+label: 'Key takeaways'
 description: 'Let the attendees know what are you offering to them to take back from your session'
 required: true
 translatable: false

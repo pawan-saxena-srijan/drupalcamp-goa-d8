@@ -21,6 +21,10 @@ third_party_settings:
         hide: false
       25:
         hide: false
+      1:
+        hide: false
+      55:
+        hide: false
 _core:
   default_config_hash: KuyA4NHPXcmKAjRtwa0vQc2ZcyrUJy6IlS2TAyMNRbc
 name: 'Basic page'

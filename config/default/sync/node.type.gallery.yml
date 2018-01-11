@@ -24,6 +24,10 @@ third_party_settings:
         hide: false
       25:
         hide: false
+      1:
+        hide: false
+      55:
+        hide: false
 name: Gallery
 type: gallery
 description: 'Content type to manage images for Camp'

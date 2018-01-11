@@ -12,7 +12,7 @@ dependencies:
     - node
     - user
 id: spronsors
-label: Spronsors
+label: Sponsors
 module: views
 description: ''
 tag: ''

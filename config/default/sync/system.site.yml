@@ -1,6 +1,6 @@
 uuid: a7e2e7d4-99d1-41d2-921e-151065515a2d
 name: drupalcampgoa
-mail: yogen.prasad@gmail.com
+mail: drupalcampgoa@gmail.com
 slogan: ''
 page:
   403: /user/login
@@ -12,4 +12,4 @@ langcode: en
 default_langcode: en
 _core:
   default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
-mail_notification: gaurang.agrawal@srijan.net
+mail_notification: drupalcampgoa@gmail.com
