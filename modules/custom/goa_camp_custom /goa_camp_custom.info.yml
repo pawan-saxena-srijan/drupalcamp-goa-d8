@@ -1,0 +1,7 @@
+name: Goa Camp Custom
+type: module
+description: Redirects user to Homepage on Login
+core: 8.x
+package: Custom
+dependencies:
+  - user

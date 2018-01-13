@@ -1,0 +1,49 @@
+<?php
+
+/**
+ * @file
+ * Contains goa_camp_custom.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function goa_camp_custom_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the goa_camp_custom module.
+    case 'help.page.goa_camp_custom':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Redirects user to Homepage on Login') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+//function goa_camp_custom_user_login($account) {
+//  // Set the redirectUrl.
+//  // $redirectUrl = '/';
+//
+//  // OR lets try using the Url class form Drupal 8 Core. Can use any one of the approach
+//  $homePage = \Drupal\Core\Url::fromRoute('<front>');
+//
+//  $redirectUrl = $homePage->toString();
+//
+//  $redirectResponse = new \Symfony\Component\HttpFoundation\RedirectResponse($redirectUrl);
+//  $redirectResponse->send();
+//}
+
+/**
+ * Implements hook_form_alter().
+ */
+function goa_camp_custom_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if ($form_id == 'node_session_form') {
+    $form['#title'] = 'Submit a Session';
+  }
+}

@@ -551,6 +551,19 @@ display:
         options: {  }
       defaults:
         access: false
+        header: false
+      header:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content: "<p>Want to share your knowledge or experience? Then why not submit a session and you could be presenting in Drupal Camp Goa 2018!</p>\n<p>There are ([view:total-rows]) submitted sessions!</p>"
+          plugin_id: text_custom
     cache_metadata:
       max-age: -1
       contexts:

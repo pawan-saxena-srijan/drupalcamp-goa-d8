@@ -3,12 +3,12 @@ smtp_host: smtp.gmail.com
 smtp_hostbackup: ''
 smtp_port: '465'
 smtp_protocol: ssl
-smtp_username: vishwa.chikate@srijan.net
-smtp_password: 'Vishwa9 @'
-smtp_from: yogen.prasad@gmail.com
+smtp_username: drupalcampgoa@gmail.com
+smtp_password: 'proDigLatoRity#9538'
+smtp_from: drupalcampgoa@gmail.com
 smtp_fromname: 'Drupal Camp Goa'
-smtp_client_hostname: TEST
-smtp_client_helo: TESTING
+smtp_client_hostname: ''
+smtp_client_helo: ''
 smtp_allowhtml: '1'
 smtp_test_address: ''
 smtp_debugging: false
