@@ -7,9 +7,11 @@ dependencies:
     - field.storage.node.field_sponsorship_image
     - image.style.medium
     - node.type.sponsors
+    - taxonomy.vocabulary.sponsorship_categories
   module:
     - image
     - node
+    - taxonomy
     - user
 id: spronsors
 label: Sponsors
@@ -220,27 +222,24 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
-      sorts:
-        created:
-          id: created
-          table: node_field_data
-          field: created
-          order: DESC
-          entity_type: node
-          entity_field: created
-          plugin_id: date
-          relationship: none
-          group_type: group
-          admin_label: ''
-          exposed: false
-          expose:
-            label: ''
-          granularity: second
+      sorts: {  }
       title: Sponsors
       header: {  }
       footer: {  }
       empty: {  }
-      relationships: {  }
+      relationships:
+        term_node_tid:
+          id: term_node_tid
+          table: node_field_data
+          field: term_node_tid
+          relationship: none
+          group_type: group
+          admin_label: term
+          required: false
+          vids:
+            - sponsorship_categories
+          entity_type: node
+          plugin_id: node_term_data
       arguments: {  }
       display_extenders: {  }
     cache_metadata:
