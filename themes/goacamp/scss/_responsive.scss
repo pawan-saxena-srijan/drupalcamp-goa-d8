@@ -3,7 +3,7 @@
 @media only screen and (max-width: 768px) {
   .top-container {
     flex-wrap: wrap;
-    flex-direction: column-reverse; 
+    flex-direction: column-reverse;
     .column-1 {
       transform: none;
       flex-basis: 100%;
@@ -26,9 +26,9 @@
     }
   }
   .region-content {
-    .block-region-content { 
+    .block-region-content {
       .block-block-content {
-        &:first-child {     
+        &:first-child {
           padding: 2em 1em;
           .field--name-body {
             img {
@@ -46,7 +46,7 @@
   }
   [class*="views-blockspronsors"] {
     .view-content {
-      max-height: 100%;
+      max-width: 100%;
     }
   }
   .become-sponsors { 
@@ -69,14 +69,15 @@
   .menu--footer {
     > ul.menu {
       > li {
-        width: 50%;
-        margin: 0;
+        width: 90%;
+        margin: 0 0 30px;
         > a {
           margin-bottom: 10px;
         }
       }
     }
   }
+  .node-session-form {
+    
+  }
 }
-
-

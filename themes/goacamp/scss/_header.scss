@@ -8,12 +8,18 @@
     .menu--account {
         position: absolute;
         right: 0;
+        @include mobile {
+            display: none;
+        }
     }
 }
 
 .header {
     background: url("../images/banner.png") no-repeat scroll 0 0 transparent;
     background-size: cover;
+    @include mobile {
+        background-position: -480px 0;
+    }
 }
 
 ul {

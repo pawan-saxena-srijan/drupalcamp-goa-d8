@@ -46,6 +46,9 @@
         flex-direction: column;
         align-items: center;
         margin-bottom: -16%;
+        @include mobile {
+            display: none;
+        }
         a {
             cursor: pointer;
             width: 20px;
@@ -218,6 +221,9 @@
         @include flex(row);
         justify-content: center;
         flex-wrap: wrap;
+        @include mobile {
+            @include flex(column);
+        }
         .field-content {
             @include flex(row);
             justify-content: center;
@@ -233,6 +239,9 @@
         .views-row {
             flex-basis: 33%;
             margin-bottom: 2em;
+            @include mobile {
+                flex-basis: 100%;
+            }
         }
         .views-field-field-logo {
             margin-bottom: 0.5em;
@@ -330,6 +339,9 @@
     .become-sponsors-content {
         width: 600px;
         text-align: right;
+        @include mobile {
+            text-align: center;
+        }
         h3 {
             @extend .heading;
             color: $color_light_blue;
