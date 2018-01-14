@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "17e9e408d0de9482d30db14772512811",
+    "content-hash": "3d01feadf1282a66a6fadebac7f18bd7",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1823,6 +1823,53 @@
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             },
             "time": "2017-03-15T17:04:08+00:00"
+        },
+        {
+            "name": "drupal/link_attributes",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/link_attributes",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/link_attributes-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "204a8d53c4746c7c5d5daccfe29df4fcfe8c2809"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1514787185",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "larowlan",
+                    "homepage": "https://www.drupal.org/user/395439"
+                }
+            ],
+            "description": "Provides a widget to allow settings of link attributes for menu links.",
+            "homepage": "https://www.drupal.org/project/link_attributes",
+            "support": {
+                "source": "http://cgit.drupalcode.org/link_attributes"
+            }
         },
         {
             "name": "drupal/ng_lightbox",

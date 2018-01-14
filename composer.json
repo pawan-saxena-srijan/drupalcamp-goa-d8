@@ -35,7 +35,8 @@
 	"drupal/panelizer":"^4.0",
 	"drupal/pathauto":"^1.0",
 	"drupal/rules":"^3.0-alpha3",
-	"drupal/recaptcha":"^2.2"
+ 	"drupal/recaptcha":"^2.2",
+	"drupal/link_attributes":"^1.2"
 
     },
     "replace": {
