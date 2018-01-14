@@ -32,9 +32,20 @@ form {
     border-radius: 3px;
     outline: none;
     transition: 0.4s all ease;
+    @include mobile {
+      box-sizing: border-box;
+      &:not([type="checkbox"]) {
+        width: 100%;
+      }
+    }
     &:focus, &:active {
       border: 1px solid $color_light_blue;
       border-bottom: 2px solid $color_light_blue;
+    }
+  }
+  input[type="submit"] {
+    @include mobile {
+      width: inherit;
     }
   }
   .form-submit {
@@ -181,6 +192,9 @@ input[value="Preview"] {
 
 .user-form {
   width: 40%;
+  @include mobile {
+    width: 100%;
+  }
   input,
   select,
   .form-type-password {

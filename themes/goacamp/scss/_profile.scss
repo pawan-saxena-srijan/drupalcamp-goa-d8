@@ -9,6 +9,9 @@
     .field--name-user-picture {
         position: absolute;
         right: 0;
+        @include mobile {
+            position: relative;
+        }
     }
     .field__label,
     .form-item .label {
@@ -17,6 +20,9 @@
         font-weight: normal;
         margin: 0 1em 0 0;
         color: darken($color_light_blue, 20%);
+        @include mobile {
+            flex-basis: 50%;
+        }
         &:after {
             content: " : ";
             font-weight: bold;

@@ -7,8 +7,16 @@
     width: 100%;
     margin: 0 auto;
 }
+iframe {
+    @include mobile {
+        max-width: 100%;
+    }
+}
 .region-content {
     padding: 3em 4em 3em;
+    @include mobile {
+        padding: 1em 10px 1em;
+    }
 }
 .path-frontpage {
     .region-content {
@@ -34,11 +42,19 @@
 .path-user {
     .region-content {
         padding: 4em;
+        @include mobile {
+            padding: 2em 10px 1em;
+        }
     }
 }
 .region-content {
     .page-title {
         margin-top: 0;
+    }
+}
+.layout-container {
+    @include mobile {
+        margin: 0;
     }
 }
 .button--danger,

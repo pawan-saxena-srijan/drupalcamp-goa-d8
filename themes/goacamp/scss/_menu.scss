@@ -74,4 +74,73 @@ ul.menu {
             }
         }
     }
+    @include mobile {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 40px;
+        width: 40px;
+        .visually-hidden {
+            overflow: visible;
+            height: 40px;
+            width: 40px;
+            right: 0;
+            clip: inherit;
+            font-size: 0;
+            margin-bottom: 0;
+            background: url("../images/hamburger.png") no-repeat scroll 0 center transparent;
+            background-size: contain;
+        }
+        > .menu {
+            position: absolute;
+            right: 0;
+            top: 150%;
+            padding: 20px;
+            background: $color_links;
+            z-index: 10;
+            min-width: 300px;
+            display: none;
+            flex-direction: column !important;
+            &:after {
+                content: "";
+                position: absolute;
+                top: -14px;
+                width: 0;
+                height: 0;
+                border-left: 15px solid transparent;
+                transition: 0.3s all ease;
+                border-right: 15px solid transparent;
+                border-bottom: 15px solid $color_links;
+                right: 0;
+            }
+            li {
+                width: 100%;
+                margin: 0;
+                margin-bottom: 15px;
+                border-bottom: 1px solid $white;
+                a {
+                    color: $white;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                    border-bottom: none;
+                }
+            }
+        }
+        .menu-item--expanded {
+            .menu {
+                position: relative;
+                opacity: 1;
+                margin-top: 0;
+                background: transparent;
+                padding-left: 1.3em;
+                li {
+                    border-bottom: none;
+                }
+                a {
+                    color: $white;
+                }
+            }
+        }
+    }
 }

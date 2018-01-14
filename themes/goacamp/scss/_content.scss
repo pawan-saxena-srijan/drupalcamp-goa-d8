@@ -9,6 +9,9 @@
 [id*="edit-sponsorship-registration"],
 [id*="edit-volunteer"] {
     width: 40%;
+    @include mobile {
+        width: 100%;
+    }
     input[type="text"],
     input[type="tel"],
     input[type="email"],
@@ -61,6 +64,9 @@
             padding: 1em;
             box-shadow: 0 0 10px 1px rgba(0,0,0,0.3);
             border-radius: 5px;
+            @include mobile {
+                flex-basis: 100%;
+            }
             &:nth-child(3n+2) {
                 margin-left: 1%;
                 margin-right: 1%;
@@ -121,6 +127,10 @@
         padding-bottom: 2em;
         border-bottom: 1px solid lighten($color_grey, 30%);
         margin-bottom: 2em;
+        @include mobile {
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
         .field-content {
             p:last-child {
                 margin-bottom: 0;
@@ -151,6 +161,10 @@
     .layout__region--first {
         flex-basis: 72%;
         padding-right: 2%;
+        @include mobile {
+            flex-basis: 100%;
+            margin-bottom: 1.5em;
+        }
         .field__label {
             font-size: 18px;
             border-bottom: 2px solid $color_links;
@@ -161,6 +175,9 @@
     }
     .layout__region--second {
         flex-basis: 25%;
+        @include mobile {
+            flex-basis: 100%;
+        }
         .block-region-second {
             border-top-left-radius: 7px;
             border-top-right-radius: 7px;
