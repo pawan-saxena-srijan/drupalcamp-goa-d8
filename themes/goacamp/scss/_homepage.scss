@@ -10,7 +10,7 @@
         margin-top: -10%;
         transform: rotate(270deg);
         color: $color_links;
-        font-family: $raleway-bold;
+        @include flex(column);
         span:last-child {
             position: relative;
             &:after {
@@ -28,6 +28,12 @@
         flex-basis: 80%;
         justify-content: center;
         align-items: center;
+        color: $color_links;
+        font-family: $raleway-bold;
+        .header-text {
+            @include flex(column);
+            margin-top: 1em;
+        }
         img {
             max-width: 475px;
         }
