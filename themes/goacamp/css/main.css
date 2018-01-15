@@ -214,10 +214,11 @@ ul.tabs li.is-active a {
 
 .top-container .column-2 a {
   margin-top: 0.7em;
-  background: url("../images/register_now.png") no-repeat scroll 0 0 transparent;
+  background: url("../images/register_now.png") no-repeat scroll center center transparent;
   color: transparent;
   font-size: 2.5em;
-  width: 140px; }
+  width: 140px;
+  background-size: contain; }
 
 .top-container .column-3 {
   -ms-flex-preferred-size: 20%;
