@@ -40,6 +40,12 @@ input[value="Delete"]:hover,
 input[value="Remove"]:hover, form .form-submit:hover {
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.3); }
 
+@media only screen and (max-width: 768px) {
+  .buttons, .more-link a, .button--danger,
+  input[value="Delete"],
+  input[value="Remove"], form .form-submit {
+    padding: 12px 25px; } }
+
 .hvr-sweep-to-right, .region-content .block-region-content .block-block-content:first-child .field--name-body a, [class*="views-blocksession-tracks"] .view-footer a {
   vertical-align: middle;
   transform: perspective(1px) translateZ(0);
@@ -169,7 +175,10 @@ ul.tabs li.is-active a {
   -ms-transform: rotate(270deg);
   transform: rotate(270deg);
   color: #207DCC;
-  font-family: "Raleway-Bold"; }
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column; }
 
 .top-container .column-1 span:last-child {
   position: relative; }
@@ -189,7 +198,16 @@ ul.tabs li.is-active a {
   -ms-flex-pack: center;
   justify-content: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  color: #207DCC;
+  font-family: "Raleway-Bold"; }
+
+.top-container .column-2 .header-text {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 1em; }
 
 .top-container .column-2 img {
   max-width: 475px; }
