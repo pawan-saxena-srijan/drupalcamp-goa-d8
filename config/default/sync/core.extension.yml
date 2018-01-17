@@ -29,6 +29,7 @@ module:
   filter: 0
   formtips: 0
   goa_camp_custom: 0
+  google_analytics: 0
   help: 0
   hide_revision_field: 0
   history: 0
@@ -38,6 +39,7 @@ module:
   link: 0
   link_attributes: 0
   menu_ui: 0
+  metatag: 0
   ng_lightbox: 0
   node: 0
   options: 0
@@ -55,6 +57,7 @@ module:
   rules: 0
   search: 0
   shortcut: 0
+  simple_sitemap: 0
   smtp: 0
   starrating: 0
   system: 0
