@@ -28,6 +28,26 @@ third_party_settings:
         hide: false
       55:
         hide: false
+      196:
+        hide: false
+      256:
+        hide: false
+      199:
+        hide: false
+      62:
+        hide: false
+      263:
+        hide: false
+      271:
+        hide: false
+      272:
+        hide: false
+      273:
+        hide: false
+      274:
+        hide: false
+      276:
+        hide: false
     hide: false
     personalizable: true
 name: 'News and Updates'
