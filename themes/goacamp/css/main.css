@@ -466,7 +466,7 @@ ul.tabs li.is-active a {
 
 [class*="views-blockspronsors"] .view-content img {
   height: auto;
-  max-width: 300px;
+  max-width: 200px;
   width: auto; }
 
 [class*="views-blockspronsors"] .view-content ul {
@@ -498,7 +498,11 @@ ul.tabs li.is-active a {
 [class*="views-blockspronsors"] .view-content li {
   margin-bottom: 2em;
   margin-right: 3em;
-  position: relative; }
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center; }
 
 [class*="views-blockspronsors"] .view-content li:last-child {
   margin-right: 0; }

@@ -293,7 +293,7 @@
         }
         img {
             height: auto;
-            max-width: 300px;
+            max-width: 200px;
             width: auto;
         }
         ul {
@@ -326,6 +326,8 @@
             margin-bottom: 2em;
             margin-right: 3em;
             position: relative;
+            display: flex;
+            align-items: center;
             &:last-child {
                 margin-right: 0;
             }
