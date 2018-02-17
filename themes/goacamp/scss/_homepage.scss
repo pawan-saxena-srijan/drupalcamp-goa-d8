@@ -292,7 +292,8 @@
             font-family: $raleway-bold;
         }
         img {
-            height: 100px;
+            height: auto;
+            max-width: 300px;
             width: auto;
         }
         ul {
