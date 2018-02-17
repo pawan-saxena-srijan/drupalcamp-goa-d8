@@ -321,6 +321,14 @@
                     background: none;
                 }
             }
+            ul {
+                @include mobile {
+                    @include flex(column);
+                    li {
+                        margin-right: 0;
+                    }
+                }
+            }
         }
         li {
             margin-bottom: 2em;
