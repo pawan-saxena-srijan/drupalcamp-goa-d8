@@ -465,7 +465,8 @@ ul.tabs li.is-active a {
   font-family: "Raleway-Bold"; }
 
 [class*="views-blockspronsors"] .view-content img {
-  height: 100px;
+  height: auto;
+  max-width: 300px;
   width: auto; }
 
 [class*="views-blockspronsors"] .view-content ul {
