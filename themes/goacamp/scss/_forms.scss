@@ -207,3 +207,24 @@ input[value="Preview"] {
     width: inherit;
   }
 }
+
+#webform-submission-drupal-dorm-for-male-drupalers-add-form {
+  .form-radios {
+    margin: 1em 0;
+    .form-item {
+      display: flex;
+      margin-bottom: 1em;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      input {
+        margin-right: 0.6em;
+        margin-bottom: 0;
+      }
+      label {
+        margin-bottom: 0;
+        line-height: 1;
+      }
+    }
+  }
+}
