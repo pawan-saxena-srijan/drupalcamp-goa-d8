@@ -209,7 +209,8 @@ input[value="Preview"] {
 }
 
 #webform-submission-drupal-dorm-for-male-drupalers-add-form {
-  .form-radios {
+  .form-radios,
+  .form-checkboxes {
     margin: 1em 0;
     .form-item {
       display: flex;
