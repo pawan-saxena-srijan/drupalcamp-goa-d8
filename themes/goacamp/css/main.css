@@ -1377,22 +1377,27 @@ input[value="Preview"] {
   max-width: inherit;
   width: inherit; }
 
-#webform-submission-drupal-dorm-for-male-drupalers-add-form .form-radios {
+#webform-submission-drupal-dorm-for-male-drupalers-add-form .form-radios,
+#webform-submission-drupal-dorm-for-male-drupalers-add-form .form-checkboxes {
   margin: 1em 0; }
 
-#webform-submission-drupal-dorm-for-male-drupalers-add-form .form-radios .form-item {
+#webform-submission-drupal-dorm-for-male-drupalers-add-form .form-radios .form-item,
+#webform-submission-drupal-dorm-for-male-drupalers-add-form .form-checkboxes .form-item {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 1em; }
 
-#webform-submission-drupal-dorm-for-male-drupalers-add-form .form-radios .form-item:last-child {
+#webform-submission-drupal-dorm-for-male-drupalers-add-form .form-radios .form-item:last-child,
+#webform-submission-drupal-dorm-for-male-drupalers-add-form .form-checkboxes .form-item:last-child {
   margin-bottom: 0; }
 
-#webform-submission-drupal-dorm-for-male-drupalers-add-form .form-radios .form-item input {
+#webform-submission-drupal-dorm-for-male-drupalers-add-form .form-radios .form-item input,
+#webform-submission-drupal-dorm-for-male-drupalers-add-form .form-checkboxes .form-item input {
   margin-right: 0.6em;
   margin-bottom: 0; }
 
-#webform-submission-drupal-dorm-for-male-drupalers-add-form .form-radios .form-item label {
+#webform-submission-drupal-dorm-for-male-drupalers-add-form .form-radios .form-item label,
+#webform-submission-drupal-dorm-for-male-drupalers-add-form .form-checkboxes .form-item label {
   margin-bottom: 0;
   line-height: 1; }
 
