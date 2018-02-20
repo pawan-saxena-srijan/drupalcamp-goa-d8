@@ -1377,6 +1377,15 @@ input[value="Preview"] {
   max-width: inherit;
   width: inherit; }
 
+#webform-submission-drupal-dorm-for-male-drupalers-add-form .fieldset-legend {
+  font-family: "Raleway-Bold";
+  color: #63c6e5;
+  font-size: 14px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center; }
+
 #webform-submission-drupal-dorm-for-male-drupalers-add-form .form-radios,
 #webform-submission-drupal-dorm-for-male-drupalers-add-form .form-checkboxes {
   margin: 1em 0; }
