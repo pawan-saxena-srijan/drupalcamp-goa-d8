@@ -209,6 +209,13 @@ input[value="Preview"] {
 }
 
 #webform-submission-drupal-dorm-for-male-drupalers-add-form {
+  .fieldset-legend {
+    font-family: $raleway-bold;
+    color: $color_light_blue;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
   .form-radios,
   .form-checkboxes {
     margin: 1em 0;
