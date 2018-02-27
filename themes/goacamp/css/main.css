@@ -969,7 +969,7 @@ ul.menu a {
 .node--type-session ul li {
   margin-bottom: 0.5em; }
 
-.path-session-detail .layout----twocol {
+.path-session-detail .layout--twocol {
   border: 3px solid grey;
   padding: 10px;
   border-radius: 10px; }
