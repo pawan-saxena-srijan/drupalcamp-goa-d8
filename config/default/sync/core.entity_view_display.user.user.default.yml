@@ -8,6 +8,7 @@ dependencies:
     - field.field.user.user.field_first_name
     - field.field.user.user.field_job_title
     - field.field.user.user.field_last_name
+    - field.field.user.user.field_mobileno
     - field.field.user.user.field_organisation_institution
     - field.field.user.user.user_picture
     - image.style.thumbnail
@@ -67,6 +68,14 @@ content:
     region: content
   field_last_name:
     weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_mobileno:
+    weight: 7
     label: above
     settings:
       link_to_entity: false
