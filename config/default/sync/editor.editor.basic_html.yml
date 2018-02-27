@@ -38,10 +38,25 @@ settings:
           name: 'Block Formatting'
           items:
             - Format
+            - Indent
+            - Outdent
         -
           name: Tools
           items:
             - Source
+            - Styles
+        -
+          name: paste
+          items:
+            - Paste
+            - PasteText
+            - PasteFromWord
+        -
+          name: alignment
+          items:
+            - JustifyCenter
+            - JustifyRight
+            - JustifyBlock
   plugins:
     language:
       language_list: un

@@ -5,10 +5,107 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.session.body
+    - field.field.node.session.field_benefactions
+    - field.field.node.session.field_by_submitting_this_session
+    - field.field.node.session.field_drupal_version
+    - field.field.node.session.field_experience_level
+    - field.field.node.session.field_prerequisite_for_attendees
+    - field.field.node.session.field_room
+    - field.field.node.session.field_selected
+    - field.field.node.session.field_session_date
+    - field.field.node.session.field_session_ratings
+    - field.field.node.session.field_speakers
+    - field.field.node.session.field_tracks
+    - field.field.node.session.field_upload_presentation
     - node.type.session
   module:
+    - panelizer
     - text
     - user
+third_party_settings:
+  panelizer:
+    enable: true
+    custom: false
+    allow: false
+    default: default
+    displays:
+      default:
+        blocks:
+          27e2b5e2-7872-4761-82db-b7747f6ff70b:
+            id: 'entity_field:node:body'
+            label: 'Session Details/Overview'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: text_summary_or_trimmed
+              settings:
+                trim_length: 600
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            region: first
+            weight: 0
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            uuid: 27e2b5e2-7872-4761-82db-b7747f6ff70b
+          c37d04b7-64e6-4baf-9d5f-52c3eb10d946:
+            id: 'entity_field:node:title'
+            label: Title
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: string
+              settings:
+                link_to_entity: false
+              third_party_settings: {  }
+              weight: 0
+            region: top
+            weight: 0
+            uuid: c37d04b7-64e6-4baf-9d5f-52c3eb10d946
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+          fae50f17-16cd-474c-a687-4cbe210d0c92:
+            id: 'entity_field:node:field_tracks'
+            label: Track
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: above
+              type: entity_reference_label
+              settings:
+                link: false
+              third_party_settings: {  }
+              weight: 0
+            region: first
+            weight: -1
+            uuid: fae50f17-16cd-474c-a687-4cbe210d0c92
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+          4c9333c8-c817-4144-b36b-aef11386d070:
+            id: 'views_block:session_details-block_1'
+            label: ''
+            provider: views
+            label_display: '0'
+            views_label: ''
+            items_per_page: none
+            region: second
+            weight: 0
+            uuid: 4c9333c8-c817-4144-b36b-aef11386d070
+            context_mapping: {  }
+        id: panels_variant
+        label: Default
+        uuid: dce25658-cc99-41e2-afb9-303d3217e6bc
+        weight: 0
+        layout: layout_twocol
+        layout_settings: {  }
+        page_title: null
+        storage_type: panelizer_default
+        storage_id: 'node:session:teaser:default'
+        builder: ipe
+        pattern: panelizer
+        static_context: {  }
 id: node.session.teaser
 targetEntityType: node
 bundle: session
@@ -25,12 +122,20 @@ content:
   links:
     weight: 100
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   field_benefactions: true
+  field_by_submitting_this_session: true
+  field_drupal_version: true
   field_experience_level: true
+  field_prerequisite_for_attendees: true
   field_prerequisites_for_attendee: true
   field_room: true
+  field_selected: true
   field_session_date: true
   field_session_duration: true
   field_session_ratings: true
+  field_speakers: true
   field_tracks: true
+  field_upload_presentation: true

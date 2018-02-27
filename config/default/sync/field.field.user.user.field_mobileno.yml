@@ -1,0 +1,20 @@
+uuid: e2fea2ac-18cd-4728-99cb-f2195160bb72
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_mobileno
+  module:
+    - user
+id: user.user.field_mobileno
+field_name: field_mobileno
+entity_type: user
+bundle: user
+label: 'Mobile No.'
+description: 'We will contact you to share important updates with you.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

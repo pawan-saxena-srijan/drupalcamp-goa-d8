@@ -8,6 +8,7 @@ dependencies:
     - field.field.user.user.field_first_name
     - field.field.user.user.field_job_title
     - field.field.user.user.field_last_name
+    - field.field.user.user.field_mobileno
     - field.field.user.user.field_organisation_institution
     - field.field.user.user.user_picture
     - image.style.thumbnail
@@ -69,6 +70,14 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_mobileno:
+    weight: 31
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_organisation_institution:
     weight: 3
     settings:
@@ -77,6 +86,9 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
+  google_analytics:
+    weight: 3
     region: content
   path:
     type: path
