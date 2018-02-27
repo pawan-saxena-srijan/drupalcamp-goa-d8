@@ -969,6 +969,36 @@ ul.menu a {
 .node--type-session ul li {
   margin-bottom: 0.5em; }
 
+.path-session-detail .layout----twocol {
+  border: 3px solid grey;
+  padding: 10px;
+  border-radius: 10px; }
+
+.path-session-detail .layout .block-entity-fieldnodefield-tracks {
+  border-bottom: 2px solid grey;
+  padding-bottom: 15px; }
+
+.path-session-detail .layout .block-entity-fieldnodefield-tracks .field__label {
+  display: none; }
+
+.path-session-detail .layout .block-entity-fieldnodefield-tracks .field__item {
+  font-weight: bold; }
+
+.path-session-detail .layout .block-region-second {
+  border-radius: 5px;
+  border: 2px solid grey;
+  padding: 10px; }
+
+.path-session-detail .layout .views-field-user-picture {
+  border-bottom: 1px solid grey;
+  padding-bottom: 5px; }
+
+.path-session-detail .layout .views-field-nothing,
+.path-session-detail .layout .views-field-field-organisation-institution,
+.path-session-detail .layout .views-field-field-job-title {
+  font-weight: bold;
+  padding-top: 5px; }
+
 .region-header {
   display: -ms-flexbox;
   display: flex;

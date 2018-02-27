@@ -232,3 +232,43 @@
         margin-bottom: 0.5em;
     }
 }
+
+// Temporary SCSS, will be deleted in future.
+// Sass for session detail page
+.path-session-detail {
+    .layout {
+        &----twocol {
+            border: 3px solid grey;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .block-entity-fieldnodefield-tracks {
+            border-bottom: 2px solid grey;
+            padding-bottom: 15px;
+            .field__label {
+                display: none;
+            }
+            .field__item {
+                font-weight: bold;
+            }
+        }
+
+        .block-region-second {
+            border-radius: 5px;
+            border: 2px solid grey;
+            padding: 10px;
+        }
+
+        .views-field-user-picture {
+            border-bottom: 1px solid grey;
+            padding-bottom: 5px;
+        }
+
+        .views-field-nothing,
+        .views-field-field-organisation-institution,
+        .views-field-field-job-title {
+            font-weight: bold;
+            padding-top: 5px;
+        }
+    }
+}
