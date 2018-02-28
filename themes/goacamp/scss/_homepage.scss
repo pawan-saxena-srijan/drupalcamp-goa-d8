@@ -303,6 +303,7 @@
             position: relative;
             justify-content: center;
             position: relative;
+            flex-wrap: wrap;
             &:after {
                 content: "";
                 background: url("../images/separator.svg") no-repeat scroll left bottom transparent;
@@ -326,6 +327,7 @@
                     @include flex(column);
                     li {
                         margin-right: 0;
+                        justify-content: center;
                     }
                 }
             }

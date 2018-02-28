@@ -479,7 +479,9 @@ ul.tabs li.is-active a {
   position: relative;
   -ms-flex-pack: center;
   justify-content: center;
-  position: relative; }
+  position: relative;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
 
 [class*="views-blockspronsors"] .view-content ul:after {
   content: "";
@@ -502,7 +504,9 @@ ul.tabs li.is-active a {
     -ms-flex-direction: column;
     flex-direction: column; }
   [class*="views-blockspronsors"] .view-content .item-list ul li {
-    margin-right: 0; } }
+    margin-right: 0;
+    -ms-flex-pack: center;
+    justify-content: center; } }
 
 [class*="views-blockspronsors"] .view-content li {
   margin-bottom: 2em;
