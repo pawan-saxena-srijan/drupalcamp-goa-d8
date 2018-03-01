@@ -1546,6 +1546,32 @@ input[value="Preview"] {
   -ms-flex-pack: center;
   justify-content: center; }
 
+.schedule img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: none; }
+
+.tabs {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-bottom: 1em; }
+
+.tabs > div {
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #63c6e5;
+  color: #63c6e5;
+  cursor: pointer; }
+
+.tabs > div.active {
+  color: #FFFFFF;
+  background: #63c6e5; }
+
 .view-attendees .view-content {
   display: -ms-flexbox;
   display: flex;

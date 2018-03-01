@@ -15,6 +15,20 @@
                     }
                 });
             }
+            $(".day1-image").show();
+            $(".day1").addClass("active");
+            $(".day1").click(function() {
+                $(".day1-image").show();
+                $(this).addClass("active");
+                $(".day2-image").hide();
+                $(".day2").removeClass("active");
+            });
+            $(".day2").click(function() {
+                $(".day2-image").show();
+                $(this).addClass("active");
+                $(".day1-image").hide();
+                $(".day1").removeClass("active");
+            });
         }
     };
 }(jQuery));
