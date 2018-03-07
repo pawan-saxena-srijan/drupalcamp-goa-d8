@@ -1,0 +1,32 @@
+.view-spronsors {
+    .item-list:not(:last-child) {
+        margin-bottom: 1em;
+        border-bottom: 1px solid $color_grey;
+        padding-bottom: 1em;
+    }
+    .item-list {
+        h3 {
+            color: $color_links;
+            border-bottom: 1px solid $color_links;
+            display: inline-block;
+            font-size: 24px;
+            font-family: $raleway-bold;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            @include flex(row);
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        li:not(:last-child) {
+            margin-right: 4em;
+        }
+        img {
+            max-width: 200px;
+            width: 100%;
+            height: auto;
+        }
+    }
+}
