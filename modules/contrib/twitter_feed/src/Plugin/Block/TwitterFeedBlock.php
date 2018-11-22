@@ -125,10 +125,9 @@ class TwitterFeedBlock extends BlockBase implements ContainerFactoryPluginInterf
       return ['#markup' => $this->t('API Key or Secret missing for Twitter Feed.')];
     }
     $encoded_key = base64_encode("$api_key:$api_secret");
-    $grant = 'grant_type=client_credentials';
     $headers = [
-      'Content-Length' => strlen($grant),
       'Authorization' => "Basic $encoded_key",
+      'Content-Type' => 'application/x-www-form-urlencoded'
     ];
     $options = [
       'headers' => $headers,
@@ -189,9 +188,9 @@ class TwitterFeedBlock extends BlockBase implements ContainerFactoryPluginInterf
       '#attributes' => ['class' => 'twitter-feed'],
     ];
     $build['twitter_feed_list'] = $item_list;
-    // TODO set per-block cache time and key.
-    $build['#cache']['keys'] = ['twitter_feed'];
+    $build['#cache']['keys'] = ['twitter_feed', $username, "count:$num_tweets"];
     // Cache block for 1 hour by default.
+    // TODO set per-block cache time.
     $build['#cache']['max-age'] = 3600;
 
     return $build;

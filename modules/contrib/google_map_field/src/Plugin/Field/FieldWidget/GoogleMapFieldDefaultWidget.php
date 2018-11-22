@@ -23,7 +23,7 @@ class GoogleMapFieldDefaultWidget extends WidgetBase {
    * {@inheritdoc}
    */
   public function formElement(FieldItemListInterface $items, $delta, array $element, array &$form, FormStateInterface $form_state) {
-
+    $instance_delta = $items->getName() . '-' . $delta;
     $element += [
       '#type' => 'fieldset',
       '#title' => $this->t('Map'),
@@ -34,7 +34,7 @@ class GoogleMapFieldDefaultWidget extends WidgetBase {
     $element['preview'] = [
       '#type' => 'item',
       '#title' => $this->t('Preview'),
-      '#markup' => '<div class="google-map-field-preview" data-delta="' . $delta . '"></div>',
+      '#markup' => '<div class="google-map-field-preview" data-delta="' . $instance_delta . '"></div>',
       '#prefix' => '<div class="google-map-field-widget right">',
       '#suffix' => '</div>',
     ];
@@ -51,7 +51,7 @@ class GoogleMapFieldDefaultWidget extends WidgetBase {
       '#type' => 'textfield',
       '#default_value' => isset($items[$delta]->name) ? $items[$delta]->name : NULL,
       '#attributes' => [
-        'data-name-delta' => $delta,
+        'data-name-delta' => $instance_delta,
       ],
     ];
 
@@ -61,7 +61,7 @@ class GoogleMapFieldDefaultWidget extends WidgetBase {
       '#size' => 18,
       '#default_value' => isset($items[$delta]->lat) ? $items[$delta]->lat : NULL,
       '#attributes' => [
-        'data-lat-delta' => $delta,
+        'data-lat-delta' => $instance_delta,
         'class' => [
           'google-map-field-watch-change',
         ],
@@ -74,7 +74,7 @@ class GoogleMapFieldDefaultWidget extends WidgetBase {
       '#size' => 18,
       '#default_value' => isset($items[$delta]->lon) ? $items[$delta]->lon : NULL,
       '#attributes' => [
-        'data-lon-delta' => $delta,
+        'data-lon-delta' => $instance_delta,
         'class' => [
           'google-map-field-watch-change',
         ],
@@ -86,7 +86,7 @@ class GoogleMapFieldDefaultWidget extends WidgetBase {
       '#type' => 'hidden',
       '#default_value' => isset($items[$delta]->zoom) ? $items[$delta]->zoom : 9,
       '#attributes' => [
-        'data-zoom-delta' => $delta,
+        'data-zoom-delta' => $instance_delta,
       ],
     ];
 
@@ -94,7 +94,7 @@ class GoogleMapFieldDefaultWidget extends WidgetBase {
       '#type' => 'hidden',
       '#default_value' => isset($items[$delta]->type) ? $items[$delta]->type : 'roadmap',
       '#attributes' => [
-        'data-type-delta' => $delta,
+        'data-type-delta' => $instance_delta,
       ],
     ];
 
@@ -102,7 +102,7 @@ class GoogleMapFieldDefaultWidget extends WidgetBase {
       '#type' => 'hidden',
       '#default_value' => isset($items[$delta]->width) ? $items[$delta]->width : '100%',
       '#attributes' => [
-        'data-width-delta' => $delta,
+        'data-width-delta' => $instance_delta,
       ],
     ];
 
@@ -110,7 +110,7 @@ class GoogleMapFieldDefaultWidget extends WidgetBase {
       '#type' => 'hidden',
       '#default_value' => isset($items[$delta]->height) ? $items[$delta]->height : '450px',
       '#attributes' => [
-        'data-height-delta' => $delta,
+        'data-height-delta' => $instance_delta,
       ],
     ];
 
@@ -118,7 +118,7 @@ class GoogleMapFieldDefaultWidget extends WidgetBase {
       '#type' => 'hidden',
       '#default_value' => isset($items[$delta]->marker) ? $items[$delta]->marker : "1",
       '#attributes' => [
-        'data-marker-delta' => $delta,
+        'data-marker-delta' => $instance_delta,
       ],
     ];
 
@@ -126,7 +126,7 @@ class GoogleMapFieldDefaultWidget extends WidgetBase {
       '#type' => 'hidden',
       '#default_value' => isset($items[$delta]->controls) ? $items[$delta]->controls : "1",
       '#attributes' => [
-        'data-controls-delta' => $delta,
+        'data-controls-delta' => $instance_delta,
       ],
     ];
 
@@ -134,7 +134,7 @@ class GoogleMapFieldDefaultWidget extends WidgetBase {
       '#type' => 'hidden',
       '#default_value' => isset($items[$delta]->infowindow) ? $items[$delta]->infowindow : "",
       '#attributes' => [
-        'data-infowindow-delta' => $delta,
+        'data-infowindow-delta' => $instance_delta,
       ],
     ];
 
@@ -149,8 +149,8 @@ class GoogleMapFieldDefaultWidget extends WidgetBase {
       '#type' => 'button',
       '#value' => $this->t('Set Map'),
       '#attributes' => [
-        'data-delta' => $delta,
-        'id' => 'map_setter_' . $delta,
+        'data-delta' => $instance_delta,
+        'id' => 'map_setter_' . $instance_delta,
       ],
     ];
 
@@ -158,8 +158,8 @@ class GoogleMapFieldDefaultWidget extends WidgetBase {
       '#type' => 'button',
       '#value' => $this->t('Clear'),
       '#attributes' => [
-        'data-delta' => $delta,
-        'id' => 'clear_fields_' . $delta,
+        'data-delta' => $instance_delta,
+        'id' => 'clear_fields_' . $instance_delta,
         'class' => [
           'google-map-field-clear',
         ],

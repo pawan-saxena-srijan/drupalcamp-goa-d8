@@ -5,18 +5,22 @@
    */
   Drupal.behaviors.colorboxInline = {
     attach: function (context, drupalSettings) {
-      $('[data-colorbox-inline]', context).once().click(function () {
-        var $link = $(this);
-        var settings = $.extend({}, drupalSettings.colorbox, {
-          href: false,
-          inline: true
-        }, {
-          className: $link.data('class'),
-          href: $link.data('colorbox-inline'),
-          width: $link.data('width'),
-          height: $link.data('height')
-        });
+      $('[data-colorbox-inline]', context).once('colorbox-inline').each(function () {
+        var $link = $(this),
+          data = $link.data(),
+          settings = $.extend({}, drupalSettings.colorbox, {
+            href: false,
+            inline: true
+          }, {
+            className: data.class,
+            href: data.colorboxInline,
+            width: data.width,
+            height: data.height,
+            rel: data.rel
+          });
         $link.colorbox(settings);
+        $link.colorbox.close();
+        $link.click(function () { $(this).colorbox();});
       });
     }
   };

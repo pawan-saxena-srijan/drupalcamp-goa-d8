@@ -28,7 +28,11 @@ var google_map_field_map;
 
         var google_map_field_map = new google.maps.Map(this, mapOptions);
 
-        google.maps.event.trigger(google_map_field_map, 'resize')
+        google.maps.event.addDomListener(window, 'resize', function() {
+          var center = google_map_field_map.getCenter();
+          google.maps.event.trigger(google_map_field_map, "resize");
+          google_map_field_map.setCenter(center);
+        });
 
         // Drop a marker at the specified position.
         var marker = new google.maps.Marker({

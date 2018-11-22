@@ -27,22 +27,27 @@ function twitter_feed_requirements($phase) {
 
   // Check to see if the Timeago library is available.
   if ($phase == 'runtime') {
-    $requirements['timeago'] = array(
-      'title' => 'Timeago',
+    $installed = FALSE;
+    $requirements['timeago'] = ['title' => 'Timeago'];
+
+    if (function_exists('libraries_get_path')) {
+      $version = 1.5;
+      $requirements['timeago']['description'] = t('Version %version installed.', ['%version' => $version]);
+      $requirements['timeago']['severity'] = REQUIREMENT_OK;
       // @todo have the version automatically detected
-      'description' => t('Version 1.5 installed'),
-      'severity' => REQUIREMENT_OK,
-    );
-    $path = libraries_get_path('timeago');
-    $installed = file_exists($path . '/jquery.timeago.js');
+      $requirements['timeago']['value'] = $version;
+
+      $path = libraries_get_path('timeago');
+      $installed = file_exists($path . '/jquery.timeago.js');
+    }
 
     // Check the results of the test.
     if (!$installed) {
       $requirements['timeago']['description'] = t('Timeago library not found. Please consult the README.txt for installation instructions.');
-      $requirements['timeago']['severity'] = REQUIREMENT_ERROR;
+      $requirements['timeago']['severity'] = REQUIREMENT_WARNING;
       $requirements['timeago']['value'] = t('Timeago library not found.');
-      return;
     }
   }
+
   return $requirements;
 }

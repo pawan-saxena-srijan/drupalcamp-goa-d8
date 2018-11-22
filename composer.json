@@ -40,11 +40,9 @@
         "drupal/metatag": "^1.4",
         "drupal/simple_sitemap": "^2.11",
         "drupal/google_analytics": "^2.2",
-	"drupal/views_data_export":"^1.0-alpha4"
+	"drupal/views_data_export":"^1.0-alpha4",
+        "drupal/core": "^8.6.1"
 
-    },
-    "replace": {
-        "drupal/core": "^8.4"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,

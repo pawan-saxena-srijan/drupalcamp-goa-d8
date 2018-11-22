@@ -10,8 +10,8 @@ dependencies:
 
 configure : gmap.field.settings
 
-# Information added by Drupal.org packaging script on 2017-05-14
-version: '8.x-1.4'
+# Information added by Drupal.org packaging script on 2018-02-25
+version: '8.x-1.5'
 core: '8.x'
 project: 'google_map_field'
-datestamp: 1494796693
+datestamp: 1519597085
